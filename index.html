@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>REUSE</title>
+    <link rel="stylesheet" href="CSS/design.css">
+    <link rel="stylesheet" href="kalender-design.css">
+    <link rel="stylesheet" href="core/main.css">
+    <link rel="stylesheet" href="daygrid/main.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="aos.css">
+
+    <script src='core/main.js'></script>
+    <script src='daygrid/main.js'></script>
+    <script src='interaction/main.js'></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    <script>
+         $(document).ready(function() {
+            $('button').click(function() {
+                $('#menu').delay(2000).fadeIn(5000);
+                $('button').fadeOut(500);
+            });
+        });
+        
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('menu_baggrund');
+            } else {
+                $('nav').removeClass('menu_baggrund');
+            }
+        })
+    </script>
+    
 </head>
+
 <body>
-    <p> hej med dig </p>
+
+<button class="knap">BYG</button>
+    
+    <header id="menu" style="display:none;">
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Koncept</a>
+            <li><a href="#">Praktisk</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">DIY</a></li>
+            <li><a href="#">Opslagstavle</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+
 </body>
+
 </html>
