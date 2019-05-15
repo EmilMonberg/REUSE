@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="daygrid/main.css">
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
     <script src='core/main.js'></script>
     <script src='daygrid/main.js'></script>
     <script src='interaction/main.js'></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    
+
     <script>
-         $(document).ready(function() {
+        $(document).ready(function() {
             $('button').click(function() {
-                $('#menu').delay(2000).fadeIn(5000);
+                $('#menu').delay(3000).fadeIn(5000);
                 $('button').fadeOut(500);
+                $('.animation').delay(2500).fadeOut(3000)
             });
         });
-        
+
         $(window).on('scroll', function() {
             if ($(window).scrollTop()) {
                 $('nav').addClass('menu_baggrund');
@@ -32,27 +34,55 @@
                 $('nav').removeClass('menu_baggrund');
             }
         })
+
+        $(document).ready(function() {
+            $(".knap").click(function() {
+                $(".animation").attr("src", "Billeder/Animation.gif"); 
+            });
+
+            $(".pausebutton").click(function() {
+                $(".animation").attr("src", "Billeder/Animation-statisk.png"); 
+            });
+        });
+        
     </script>
-    
+
 </head>
 
 <body>
 
-<button class="knap">BYG</button>
-    
-    <header id="menu" style="display:none;">
+    <section class="section1">
 
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Koncept</a>
-            <li><a href="#">Praktisk</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">DIY</a></li>
-            <li><a href="#">Opslagstavle</a></li>
-        </ul>
-    </nav>
-    
-    </header>
+        <button class="knap" id="gif-trigger">BYG</button>
+
+        <img class="animation" src="Billeder/Animation-statisk.png">
+
+        <header id="menu" style="display:none;">
+            
+            <img class="stort_logo" src="Billeder/REUSE-logo-stor.png">
+
+            <nav>
+                <ul>
+                   <li><img class="lille_logo" src="Billeder/logo-uden-baggrund.png"></li>
+                    <li><a href="#">Koncept</a>
+                    <li><a href="#">Praktisk</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">DIY</a></li>
+                    <li><a href="#">Opslagstavle</a></li>
+                </ul>
+            </nav>
+            
+            <div class="scroll-indicator fa fa-chevron-down"></div>
+            
+        </header>
+
+    </section>
+
+
+    <section class="section2">
+
+
+    </section>
 
 </body>
 

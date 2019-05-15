@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+/* Fonts */
+
+@font-face {
+    font-family: 'Overskrift';
+    src: url('../Fonts/Loew-Heavy.otf') format('opentype');
+}
+
+/* Keyframes */
 
 @keyframes fadein {
     from {
@@ -50,11 +58,43 @@
     }
 }
 
+@-webkit-keyframes bounce {
+    0% {
+        top: 87%;
+    }
+
+    50% {
+        top: 90%;
+    }
+
+    100% {
+        top: 87%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 87%;
+    }
+
+    50% {
+        top: 90%;
+    }
+
+    100% {
+        top: 87%;
+    }
+}
 
 body {
     height: 100%;
     max-width: 100%;
 }
+
+
+
+
+/* Navigations styling */
 
 header {
     z-index: 9999;
@@ -68,12 +108,12 @@ nav {
     left: 0;
     width: 100%;
     transition: .8s;
+    z-index: 999999;
 }
 
-nav.black {
+nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
-    padding: 10px 0px;
-
+    padding: 5px 0px;
 }
 
 .knap {
@@ -81,14 +121,36 @@ nav.black {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
     border: 1px solid #555;
-    background-color: rgb(0, 143, 138, .8);
+    color: #fff;
+    background-color: rgb(249, 154, 56);
     font-size: 20px;
+    font-family: Overskrift;
+    z-index: 1000;
 
     animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari and Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */
+}
+
+.knap:hover {
+    cursor: pointer;
+}
+
+.animation {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -32%);
+    z-index: 10 animation: fadein 3s;
     -moz-animation: fadein 3s;
     /* Firefox */
     -webkit-animation: fadein 3s;
@@ -104,6 +166,7 @@ nav.menu_baggrund ul li a {
 nav ul {
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -114,10 +177,12 @@ nav ul li a {
     font-size: 20px;
     line-height: 60px;
     color: #262626;
-    padding: 2px 20px;
+    padding: 5px 30px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .5s
+    transition: .5s;
+    font-family: Overskrift;
+
 }
 
 nav.menu_baggrund nav ul li a {
@@ -127,5 +192,56 @@ nav.menu_baggrund nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
     color: #fff;
-    background: #26ff79
+    background: #008f8a;
+    transition: 1s;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.section1 {
+    background-color: #008f8a;
+    width: 100%;
+    height: 100vh;
+}
+
+.stort_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lille_logo {
+    width: 100px;
+    padding: 10px 30px;
+    transition: 1s;
+    
+}
+.lille_logo:hover {
+    width: 110px;
+    transition: 0.8s;
+}
+
+nav.menu_baggrund ul li img {
+    margin-bottom: -80px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    font-size: 65px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(249, 154, 56);
+    z-index: 50;
+    margin-top: 40px;
+
+    -webkit-animation: bounce 1.5s infinite;
+    animation: bounce 1.5s infinite;
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    background: url(Foto_%20Aarhus%20Kommune.jpg);
+    background-size: cover;
 }
