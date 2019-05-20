@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Overskrift';
+    src: url('../Fonts/Loew-Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Tekst';
+    src: url('../Fonts/Loew-Regular.otf') format('opentype');
+}
+
+/* Keyframes */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    height: 100%;
+    max-width: 100%;
+}
+
+header {
+    z-index: 9999;
+}
+
+nav {
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: .8s;
+    z-index: 999999;
+    
+     animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+nav.menu_baggrund {
+    background: rgba(0, 0, 0, .8);
+    padding: 5px 0px;
+}
+
+
+nav.menu_baggrund ul li a {
+    color: white;
+}
+
+nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 2px;
+}
+
+nav ul li .tt {
+    font-size: 20px;
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-family: Overskrift;
+}
+
+nav ul li img {
+    line-height: 20px;
+}
+
+nav.menu_baggrund nav ul li a {
+    color: #fff;
+}
+
+nav ul li .tt.active {
+    border: 1px solid #fff;
+}
+
+nav ul li .tt:hover {
+
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    transition: 1s;
+    border-radius: 0px 15px 0px 15px;
+}
+
+nav.menu_baggrund ul li .tt.active,
+nav.menu_baggrund ul li .tt:hover {
+    color: #fff;
+    background: #008f8a;
+    transition: 1s;
+    border-radius: 0px 15px 0px 15px;
+}
+
+nav.menu_baggrund ul li img {
+    margin-bottom: -100px;
+}
+
+.lille_logo {
+    width: 110px;
+    padding: 10px 30px;
+    transition: 0.8s;
+
+}
+
+.lille_logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.section1 {
+    background-color: #008f8a;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*-----------------------------FOOTER--------------------------------*/
+
+
+footer {
+    min-height: 450px;
+    background-color: #262626;
+    color: #fff;
+    font-family: tekst;
+}
+
+.some {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.some div {
+    display: flex;
+    background-color: #074f4b;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.some a {
+    position: relative;
+    top: 15%;
+    text-decoration: none;
+    color: #262626;
+    font-size: 50px;
+}
+
+.some i {
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.info div {
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info h2 {
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    font-family: Overskrift;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.info p {
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-align: center;
+    font-family: Overskrift;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 5px;
+}

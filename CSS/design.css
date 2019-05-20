@@ -10,6 +10,11 @@
     src: url('../Fonts/Loew-Heavy.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Tekst';
+    src: url('../Fonts/Loew-Regular.otf') format('opentype');
+}
+
 /* Keyframes */
 
 @keyframes fadein {
@@ -91,8 +96,11 @@ body {
     max-width: 100%;
 }
 
-
-
+/*
+body::-webkit-scrollbar {
+    display: none;
+}
+*/
 
 /* Navigations styling */
 
@@ -106,9 +114,16 @@ nav {
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     transition: .8s;
     z-index: 999999;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
 }
 
 nav.menu_baggrund {
@@ -120,42 +135,45 @@ nav.menu_baggrund {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 60px;
-    border-radius: 20px;
-    border: 1px solid #555;
-    color: #fff;
-    background-color: rgb(249, 154, 56);
-    font-size: 20px;
-    font-family: Overskrift;
+    transform: translate(-50%, -150%);
+    width: 350px;
+    height: 100px;
+    border: 1px solid #222;
+    color: #92ff78;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 10px #222;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: overskrift;
     z-index: 1000;
-
-    animation: fadein 3s;
-    -moz-animation: fadein 3s;
+    transition: .3s;
+    
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
     /* Firefox */
-    -webkit-animation: fadein 3s;
+    -webkit-animation: fadein 2s;
     /* Safari and Chrome */
-    -o-animation: fadein 3s;
+    -o-animation: fadein 2s;
     /* Opera */
 }
 
 .knap:hover {
     cursor: pointer;
+    font-size: 26px;
 }
 
-.animation {
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%, -32%);
-    z-index: 10 animation: fadein 3s;
-    -moz-animation: fadein 3s;
+.animation {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
     /* Firefox */
-    -webkit-animation: fadein 3s;
+    -webkit-animation: fadein 2s;
     /* Safari and Chrome */
-    -o-animation: fadein 3s;
+    -o-animation: fadein 2s;
     /* Opera */
 }
 
@@ -171,26 +189,39 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    padding: 2px;
 }
 
-nav ul li a {
+nav ul li .tt {
     font-size: 20px;
-    line-height: 60px;
+    line-height: 80px;
     color: #262626;
     padding: 5px 30px;
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
     font-family: Overskrift;
+}
 
+nav ul li img {
+    line-height: 20px;
 }
 
 nav.menu_baggrund nav ul li a {
     color: #fff;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
+nav ul li .tt.active,
+nav ul li .tt:hover {
+
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    transition: 1s;
+    border-radius: 0px 15px 0px 15px;
+}
+
+nav.menu_baggrund ul li .tt.active,
+nav.menu_baggrund ul li .tt:hover {
     color: #fff;
     background: #008f8a;
     transition: 1s;
@@ -205,43 +236,618 @@ nav ul li a:hover {
 
 .stort_logo {
     position: absolute;
-    top: 50%;
+    top: 47.5%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: .5s;
+    width: 500px;
+    overflow: hidden;
+}
+
+.moto {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    color: #fff;
+    font-family: Overskrift;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .lille_logo {
-    width: 100px;
-    padding: 10px 30px;
-    transition: 1s;
-    
-}
-.lille_logo:hover {
     width: 110px;
+    padding: 10px 30px;
     transition: 0.8s;
+
 }
 
+.lille_logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
 nav.menu_baggrund ul li img {
-    margin-bottom: -80px;
+    margin-bottom: -100px;
 }
 
 .scroll-indicator {
     position: absolute;
-    font-size: 65px;
+    font-size: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(249, 154, 56);
+    color: #f99a38;
     z-index: 50;
     margin-top: 40px;
+    padding: 10px;
+    text-shadow: 0px 1px 5px #262626;
 
     -webkit-animation: bounce 1.5s infinite;
     animation: bounce 1.5s infinite;
 }
 
-.section2 {
-    width: 100%;
-    height: 100vh;
-    background: url(Foto_%20Aarhus%20Kommune.jpg);
-    background-size: cover;
+
+/* ---------------------- INFOGRAPHIC -------------------------------*/
+
+.infographic {
+    max-width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
 }
+
+.infographic_animationer {
+    position: relative;
+}
+
+.infographic img {
+    max-width: 100%;
+}
+
+.step_1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 350px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_2 {
+
+    position: absolute;
+    top: 14.7%;
+    right: 0%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 350px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_3 {
+
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 370px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_4 {
+
+    position: absolute;
+    top: 30.5%;
+    right: 5%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 350px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_5 {
+
+    position: absolute;
+    top: 37%;
+    right: 0%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 200px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_6 {
+
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 400px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_7 {
+
+    position: absolute;
+    bottom: 46%;
+    left: 8%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 400px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_8 {
+
+    position: absolute;
+    bottom: 29.2%;
+    right: 5%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 400px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_9 {
+
+    position: absolute;
+    bottom: 16.2%;
+    left: 5%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 450px;
+    padding: 20px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+.step_10 {
+
+    position: absolute;
+    bottom: 10.7%;
+    right: 24.5%;
+    text-align: center;
+    background-color: rgb(0, 143, 138);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    width: 180px;
+    padding: 10px;
+    font-family: tekst;
+    -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+    clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
+}
+
+
+
+
+
+
+
+
+/* ---------------------- INFOGRAPHIC SLUT -------------------------------*/
+
+.praktisk_kalender {
+    height: 1520px;
+}
+
+.praktisk {
+    width: 100%;
+    height: 950px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #156a5a;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
+
+.praktisk_tekst {
+    position: relative;
+    max-width: 50%;
+    top: 20%;
+    left: 10%;
+}
+
+.praktisk h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.praktisk p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.praktisk button {
+    float: left;
+    padding: 15px 50px 15px 50px;
+    border-radius: 50px;
+    border-style: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Overskrift;
+    box-shadow: 0px 2px 10px #262626;
+    color: #fff;
+    background-color: #00a87b;
+    transition: .2s;
+}
+
+.praktisk button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+.praktisk img {
+    position: absolute;
+    width: 300px;
+    top: 20%;
+    right: 10%;
+    transition: transform .2s;
+}
+
+.praktisk img:hover {
+    transform: scale(1.05);
+}
+
+.kalender {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 950px;
+    margin-top: -380px;
+    background-color: #00a87b;
+}
+
+.kalender_tekst {
+    position: absolute;
+    max-width: 50%;
+    bottom: 20%;
+    right: 5%;
+}
+
+.kalender h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.kalender p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.kalender button {
+    float: left;
+    padding: 15px 50px 15px 50px;
+    border-radius: 50px;
+    border-style: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Overskrift;
+    box-shadow: 0px 2px 10px #262626;
+    color: #fff;
+    background-color: #156a5a;
+    transition: transform .2s;
+}
+
+.kalender button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.kalender img {
+    position: absolute;
+    width: 300px;
+    bottom: 20%;
+    left: 10%;
+    transition: transform .2s;
+}
+
+.kalender img:hover {
+    transform: scale(1.05);
+}
+
+.insta {
+    text-align: center;
+    background-color: #262626;
+    color: #fff;
+    height: 400px;
+}
+
+.insta h2 {
+    font-family: Overskrift;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+
+
+.diy_opslagstavle {
+    height: 1520px;
+}
+
+.diy {
+    width: 100%;
+    height: 950px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #008f8a;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+
+.diy_tekst {
+    position: absolute;
+    max-width: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+.diy h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.diy p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.diy button {
+    float: left;
+    padding: 15px 50px 15px 50px;
+    border-radius: 50px;
+    border-style: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Overskrift;
+    box-shadow: 0px 2px 10px #262626;
+    color: #fff;
+    background-color: #074f4b;
+    transition: .2s;
+}
+
+.diy button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+.diy img {
+    position: absolute;
+    width: 300px;
+    top: 10%;
+    right: 10%;
+    transition: transform .2s;
+}
+
+.diy img:hover {
+    transform: scale(1.05);
+}
+
+.opslagstavle {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 950px;
+    margin-top: -380px;
+    background-color: #074f4b;
+}
+
+.opslagstavle_tekst {
+    position: absolute;
+    max-width: 50%;
+    bottom: 20%;
+    right: 10%;
+}
+
+.opslagstavle h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.opslagstavle p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.opslagstavle button {
+    float: left;
+    padding: 15px 50px 15px 50px;
+    border-radius: 50px;
+    border-style: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Overskrift;
+    box-shadow: 0px 2px 10px #262626;
+    color: #fff;
+    background-color: #008f8a;
+    transition: .2s;
+}
+
+.opslagstavle button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.opslagstavle img {
+    position: absolute;
+    width: 300px;
+    bottom: 20%;
+    left: 10%;
+    transition: transform .2s;
+}
+
+.opslagstavle img:hover {
+    transform: scale(1.05);
+}
+
+
+/*-----------------------------FOOTER--------------------------------*/
+
+
+footer {
+    min-height: 450px;
+    background-color: #262626;
+    color: #fff;
+    font-family: tekst;
+}
+
+.some {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.some div {
+    display: flex;
+    background-color: #074f4b;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.some a {
+    position: relative;
+    top: 15%;
+    text-decoration: none;
+    color: #262626;
+    font-size: 50px;
+}
+
+.some i {
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.info div {
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info h2 {
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    font-family: Overskrift;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.info p {
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-align: center;
+    font-family: Overskrift;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+

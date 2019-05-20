@@ -1,88 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REUSE</title>
     <link rel="stylesheet" href="CSS/design.css">
-    <link rel="stylesheet" href="kalender-design.css">
     <link rel="stylesheet" href="core/main.css">
     <link rel="stylesheet" href="daygrid/main.css">
-    <link rel="stylesheet" href="design.css">
-    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="CSS/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
-    <script src='core/main.js'></script>
-    <script src='daygrid/main.js'></script>
-    <script src='interaction/main.js'></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('button').click(function() {
-                $('#menu').delay(3000).fadeIn(5000);
-                $('button').fadeOut(500);
-                $('.animation').delay(2500).fadeOut(3000)
-            });
-        });
-
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop()) {
-                $('nav').addClass('menu_baggrund');
-            } else {
-                $('nav').removeClass('menu_baggrund');
-            }
-        })
-
-        $(document).ready(function() {
-            $(".knap").click(function() {
-                $(".animation").attr("src", "Billeder/Animation.gif"); 
-            });
-
-            $(".pausebutton").click(function() {
-                $(".animation").attr("src", "Billeder/Animation-statisk.png"); 
-            });
-        });
-        
-    </script>
-
+    <script src="Javascript/Javascript.js"></script>
+    <script src="Javascript/aos.js"></script>
+    
 </head>
 
 <body>
 
     <section class="section1">
 
-        <button class="knap" id="gif-trigger">BYG</button>
+        <button class="knap" id="gif-trigger"> Tryk for REUSE! <i class="fas fa-recycle"></i></button>
 
-        <img class="animation" src="Billeder/Animation-statisk.png">
+        <img class="animation" src="Billeder/Skraldebunke.gif">
 
-        <header id="menu" style="display:none;">
+        <header>
             
-            <img class="stort_logo" src="Billeder/REUSE-logo-stor.png">
-
             <nav>
                 <ul>
-                   <li><img class="lille_logo" src="Billeder/logo-uden-baggrund.png"></li>
-                    <li><a href="#">Koncept</a>
-                    <li><a href="#">Praktisk</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">DIY</a></li>
-                    <li><a href="#">Opslagstavle</a></li>
+                    <li><a href="index.html"><img class="lille_logo" src="Billeder/logo-uden-baggrund.png"></a></li>
+                    <li><a href="koncept.html" class="tt">Koncept</a>
+                    <li><a href="praktisk.html" class="tt">Praktisk</a></li>
+                    <li><a href="events.html" class="tt">Events</a></li>
+                    <li><a href="diy.html" class="tt">DIY</a></li>
+                    <li><a href="opslagstavle.html" class="tt">Opslagstavle</a></li>
                 </ul>
             </nav>
-            
-            <div class="scroll-indicator fa fa-chevron-down"></div>
-            
+
+            <div id="hidden" style="display: none">
+
+                <img class="stort_logo" src="Billeder/REUSE-logo-stor.png">
+
+                <p class="moto"> GIV HVAD DU HAR<br>
+                    TAG HVAD DU KAN BRUGE</p>
+
+                <div class="scroll-indicator fa fa-chevron-down"></div>
+
+            </div>
+
         </header>
 
     </section>
 
+    <div class="content">
+        
+        <section class="infographic">
 
-    <section class="section2">
+            <div class="infographic_animationer">
 
 
-    </section>
+                <img src="Billeder/Infographic-Reuse1.gif">
+
+                <div class="step_1" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Du afleverer din aflagte sofa til storskrald, på en af genbrugsstationerne i aarhus eller direkte på REUSE.</p>
+
+                </div>
+
+                <div class="step_2" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Dit storskrald afhentes på gaden af en lastvogn.</p>
+
+                </div>
+
+                <div class="step_3" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Dine ting bliver afleveret på en af de seks genbrugsstationer i Aarhus kommune. </p>
+
+                </div>
+
+                <div class="step_4" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Her bliver affaldet sorteret i restaffald og genanvendeligt affald, som blvier kørt til REUSE. </p>
+
+                </div>
+
+                <div class="step_5" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Mere end 2 tons affald bliver dagligt hentet af borgerne på REUSE. </p>
+
+                </div>
+
+                <div class="step_6" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>REUSE har en afhentniungsprocent på over 90%! Det vil altså sige at rigtig meget storskrald intet fejler! </p>
+
+                </div>
+
+                <div class="step_7" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>På REUSE hjælper frivillige og ansatte med at sætte varene på hylderne i forskellige kategorier, så det er nemmere for dig at finde, hvad du søger! </p>
+
+                </div>
+
+                <div class="step_8" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Finder du noget du kan lide, kan du tage det med hjem helt gratis, så længe du er bosat i Aarhus Kommune! </p>
+
+                </div>
+
+                <div class="step_9" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
+
+                    <p>Hvis du finder mange gode eller store ting, kan du låne en ladcykel på REUSE til at transportere dine nye fund med hjem! </p>
+
+                </div>
+
+                <div class="step_10" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-offset="100">
+
+                    <p>God fornøjelse! </p>
+
+                </div>
+
+            </div>
+
+            <script type="text/javascript">
+                AOS.init({
+
+                });
+
+            </script>
+
+        </section>
+
+        <section class="praktisk_kalender">
+
+            <div class="praktisk">
+
+                <div class="praktisk_tekst">
+
+                    <h2>PRAKTISK</h2>
+                    <br>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat, orci nec mollis cursus, enim diam consequat dui, vitae feugiat enim massa nec ex. Quisque efficitur augue aliquet fermentum mattis. Etiam pretium, nisl pellentesque laoreet vehicula, risus diam fringilla dui, quis consequat nunc lorem id eros. </p>
+                    <br>
+                    <br>
+
+                    <a href="#"><button>SE MERE</button></a>
+
+                </div>
+
+                <div class="tegning">
+                    <a href="#"><img src="Billeder/information.png"></a>
+
+                </div>
+
+            </div>
+
+            <section class="kalender">
+                <div class="kalender_tekst">
+
+                    <h2>KALENDER</h2>
+                    <br>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat, orci nec mollis cursus, enim diam consequat dui, vitae feugiat enim massa nec ex. Quisque efficitur augue aliquet fermentum mattis. Etiam pretium, nisl pellentesque laoreet vehicula, risus diam fringilla dui, quis consequat nunc lorem id eros. </p>
+                    <br>
+                    <br>
+
+                    <a href="#"><button>SE MERE</button></a>
+
+                </div>
+                <a href="#"><img src="Billeder/Kalender.png"></a>
+            </section>
+
+        </section>
+
+        <section class="insta">
+
+            <h2> Følg med på @REUSE_aarhus</h2>
+
+            <!-- SnapWidget -->
+
+            <div style="display: flex; justify-content: center;">
+
+            </div>
+
+        </section>
+
+        <section class="diy_opslagstavle">
+
+            <div class="diy">
+
+                <div class="diy_tekst">
+
+                    <h2>DO IT YOURSELF</h2>
+                    <br>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat, orci nec mollis cursus, enim diam consequat dui, vitae feugiat enim massa nec ex. Quisque efficitur augue aliquet fermentum mattis. Etiam pretium, nisl pellentesque laoreet vehicula, risus diam fringilla dui, quis consequat nunc lorem id eros. </p>
+                    <br>
+                    <br>
+
+                    <a href="#"><button>SE MERE</button></a>
+
+                </div>
+
+                <a href="#"><img src="Billeder/hammer.png"></a>
+
+            </div>
+
+            <section class="opslagstavle">
+                
+                <div class="opslagstavle_tekst">
+
+                    <h2>OPSLAGSTAVLE</h2>
+                    <br>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat, orci nec mollis cursus, enim diam consequat dui, vitae feugiat enim massa nec ex. Quisque efficitur augue aliquet fermentum mattis. Etiam pretium, nisl pellentesque laoreet vehicula, risus diam fringilla dui, quis consequat nunc lorem id eros. </p>
+                    <br>
+                    <br>
+
+                    <a href="#"><button>SE MERE</button></a>
+
+                </div>
+                <a href="#"><img src="Billeder/pin.png"></a>
+            </section>
+
+        </section>
+
+        <footer>
+
+            <div class="some">
+                <div>
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+                <div>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+            <div class="info">
+                <div>
+                    <h2>Adresse</h2>
+                    <p>Jægergårdsgade 164 C.</p>
+                    <p>Aarhus C</p>
+                </div>
+                <div>
+                    <h2>Åbningstider</h2>
+                    <p>Kl. 12 - 17 hver dag</p>
+                    <p>*Der kan være andre åbningstider i forbindelse med helligdage*</p>
+                </div>
+                <div>
+                    <h2>Kontakt</h2>
+                    <p>Affaldvarme@Aarhus.dk</p>
+                    <p>Tlf: 89 40 15 00</p>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>REUSE</p>
+            </div>
+
+        </footer>
+
+    </div>
 
 </body>
 
