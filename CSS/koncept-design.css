@@ -64,6 +64,7 @@
 body {
     height: 100%;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -166,14 +167,246 @@ nav.menu_baggrund ul li img {
 
 
 .section1 {
-    background-color: #008f8a;
+    background: url(../Billeder/koncept-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
+   
+}
+
+/*-----------------------Tekst afsnit--------------------------------*/
+
+.content {
+    overflow: hidden;
+}
+
+.koncept {
+    width: 100%;
+    height: 650px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #00a87b;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    
 }
 
 
-/*-----------------------------FOOTER--------------------------------*/
+.koncept_tekst {
+    position: relative;
+    max-width: 50%;
+    top: 20%;
+    left: 10%;
+}
 
+.koncept h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.koncept p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.citat1 {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 650px;
+    margin-top: -370px;
+    background-color:#156a5a;
+}
+
+.citat1_tekst {
+    position: absolute;
+    max-width: 50%;
+    bottom: 15%;
+    right: 5%;
+    text-align: right;
+}
+
+.citationstegn1 {
+    position: relative;
+    top: 48%;
+    left: 45%;
+    color: #f99a38;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.citationstegn2 {
+    position: absolute;
+    bottom: 8%;
+    right: 3%;
+    color: #f99a38;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+    transform: rotate(180deg);
+}
+
+.citat1 h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.citat1 p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.containerbillede {
+    background: url(../Billeder/orange-container.JPG);
+    width: 100%;
+    height: 650px;
+    z-index: 200;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+    overflow: hidden;
+  
+}
+
+.cirkulærøkonomi {
+    position: relative;
+    z-index: -1000;
+    width: 100%;
+    height: 650px;
+    margin-top: -290px;
+    background-color: #008f8a;
+}
+
+.cirkulærøkonomi_tekst {
+    position: relative;
+    max-width: 50%;
+    top: 30%;
+    left: 10%;
+}
+
+.cirkulærøkonomi h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.cirkulærøkonomi h3 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.cirkulærøkonomi p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+}
+
+.indretning {
+    position: relative;
+    z-index: -50;
+    width: 100%;
+    height: 650px;
+    background-color: #074f4b;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+.indretning_tekst {
+    position: relative;
+    max-width: 50%;
+    top: 25%;
+    left: 45%;
+    text-align: right;
+}
+
+.indretning h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.indretning p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: tekst;
+    line-height: 40px;
+}
+
+.indretningsbillede {
+    position: relative;
+    background: url(../Billeder/indretning.JPG);
+    width: 100%;
+    height: 650px;
+    z-index: -60;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-top: -290px;
+    
+}
+
+.tekstboks1 {
+    background-color: #008f8a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}  
+
+.tekstboks1_tekst {
+    position: relative;
+    max-width: 80%;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+}
+
+.tekstboks1 h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+} 
+
+.tekstboks1 p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: tekst;
+    line-height: 40px;
+}
+
+/*-----------------------------FOOTER--------------------------------*/
 
 footer {
     min-height: 450px;
@@ -244,3 +477,5 @@ footer {
     padding: 5px;
     letter-spacing: 5px;
 }
+
+
