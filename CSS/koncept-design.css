@@ -64,7 +64,10 @@
 body {
     height: 100%;
     max-width: 100%;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+>>>>>>> master
 }
 
 header {
@@ -167,6 +170,7 @@ nav.menu_baggrund ul li img {
 
 
 .section1 {
+<<<<<<< HEAD
     background: url(../Billeder/koncept-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -408,6 +412,17 @@ nav.menu_baggrund ul li img {
 
 /*-----------------------------FOOTER--------------------------------*/
 
+=======
+    background-color: #008f8a;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*-----------------------------FOOTER--------------------------------*/
+
+
+>>>>>>> master
 footer {
     min-height: 450px;
     background-color: #262626;
@@ -476,6 +491,10 @@ footer {
     font-size: 20px;
     padding: 5px;
     letter-spacing: 5px;
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> master
