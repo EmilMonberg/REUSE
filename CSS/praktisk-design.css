@@ -130,7 +130,7 @@ nav.menu_baggrund nav ul li a {
 }
 
 nav ul li .tt.active {
-    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 nav ul li .tt:hover {
@@ -147,6 +147,7 @@ nav.menu_baggrund ul li .tt:hover {
     background: #008f8a;
     transition: 1s;
     border-radius: 0px 15px 0px 15px;
+    border: 1px solid #fff;
 }
 
 nav.menu_baggrund ul li img {
@@ -163,6 +164,55 @@ nav.menu_baggrund ul li img {
 .lille_logo:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 1%;
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    margin-top: -18px;
+    font-size: 12px;
+    width: 98.5%;
+    color: #fff;
+}
+
+nav ul li ul li {
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav ul li ul li a {
+    color: #fff;
+    font-family: Overskrift;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover > ul, nav
+ul li ul:hover {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+nav ul li ul li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav.menu_baggrund ul li ul {
+    background-color: rgb(0, 143, 138);
+    left: 1%;
+    margin-top: -18px;
+    font-size: 15px;
+    width: 98.5%;
+    color: #fff;
+}
+
+nav.menu_baggrund ul li ul li:hover {
+    background-color: rgba(0, 0, 0, .5);
 }
 
 
