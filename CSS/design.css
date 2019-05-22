@@ -211,7 +211,7 @@ nav.menu_baggrund nav ul li a {
     color: #fff;
 }
 
-nav ul li .tt.active,
+
 nav ul li .tt:hover {
 
     color: #fff;
@@ -227,6 +227,56 @@ nav.menu_baggrund ul li .tt:hover {
     transition: 1s;
     border-radius: 0px 15px 0px 15px;
 }
+
+
+nav ul li ul {
+    position: absolute;
+    left: 1%;
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    margin-top: -18px;
+    font-size: 12px;
+    width: 98.5%;
+    color: #fff;
+}
+
+nav ul li ul li {
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav ul li ul li a {
+    color: #fff;
+    font-family: Overskrift;
+    text-decoration: none;
+}
+
+nav ul li:hover > ul, nav
+ul li ul:hover {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+nav ul li ul li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav.menu_baggrund ul li ul {
+    background-color: rgb(0, 143, 138);
+    left: 1%;
+    margin-top: -18px;
+    font-size: 15px;
+    width: 98.5%;
+    color: #fff;
+}
+
+nav.menu_baggrund ul li ul li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 
 .section1 {
     background-color: #008f8a;
@@ -298,31 +348,38 @@ nav.menu_baggrund ul li img {
 /* ---------------------- INFOGRAPHIC -------------------------------*/
 
 .infographic {
+    position: relative;
     max-width: 100%;
     justify-content: center;
     background-color: #fff;
     display: flex;
     overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .infographic_animationer {
     position: relative;
+    width: 75vw;
 }
 
 .infographic img {
-    max-width: 100%;
+    width: 100%;
 }
+
+
+
 
 .step_1 {
     position: absolute;
     top: 5%;
-    left: 5%;
+    left: 10%;
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 350px;
+    width: 300px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -337,9 +394,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 350px;
+    width: 200px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -350,13 +407,13 @@ nav.menu_baggrund ul li img {
 
     position: absolute;
     top: 13%;
-    left: 5%;
+    left: 0%;
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 370px;
+    width: 300px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -371,9 +428,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 350px;
+    width: 300px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -388,9 +445,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 200px;
+    width: 150px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -405,9 +462,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 400px;
+    width: 300px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -422,9 +479,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 400px;
+    width: 300px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -439,9 +496,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 400px;
+    width: 300px;
     padding: 20px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -456,7 +513,7 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
     width: 450px;
     padding: 20px;
@@ -473,9 +530,9 @@ nav.menu_baggrund ul li img {
     text-align: center;
     background-color: rgb(0, 143, 138);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    width: 180px;
+    width: 150px;
     padding: 10px;
     font-family: tekst;
     -webkit-clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
