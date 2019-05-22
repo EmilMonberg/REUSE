@@ -79,8 +79,8 @@ nav {
     width: 100vw;
     transition: .8s;
     z-index: 999999;
-    
-     animation: fadein 2s;
+
+    animation: fadein 2s;
     -moz-animation: fadein 2s;
     /* Firefox */
     -webkit-animation: fadein 2s;
@@ -132,6 +132,7 @@ nav.menu_baggrund nav ul li a {
 nav ul li .tt.active {
     border: 1px solid #fff;
 }
+
 nav ul li .tt:hover {
 
     color: #fff;
@@ -166,9 +167,40 @@ nav.menu_baggrund ul li img {
 
 
 .section1 {
-    background-color: #008f8a;
+    background-color: #074f4b;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
+}
+
+.indledning {
+    position: relative;
+    height: 40vh;
+    background-color: #00a87a;
+    width: 100%;
+    margin-top: -50px;
+    -webkit-clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.indledning p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+}
+
+.baggrund_et {
+    height: 40vh;
+    background-color: #262626;
+    width: 100%;
+    margin-top: -50px;
+}
+
+
+.kalender {
+    position: relative;
+    max-width: 75%;
+    background-color: #fff;
 }
 
 

@@ -7,6 +7,10 @@
     <title>REUSE</title>
     <link rel="stylesheet" href="CSS/events-design.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href='core/main.css' rel='stylesheet' />
+    <link href='daygrid/main.css' rel='stylesheet' />
+    <script src='core/main.js'></script>
+    <script src='daygrid/main.js'></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="Javascript/Javascript.js"></script>
 </head>
@@ -31,6 +35,41 @@
         </header>
 
     </section>
+    
+    <section>
+    
+    <div class="indledning"> 
+    
+    <p>1231321</p>
+    
+    </div>
+    
+    <div class="baggrund_et"></div>
+    
+    <div class="baggrund_to"></div>
+    
+     <div class="kalender">
+
+        <div id='calendar'></div>
+
+    </div>
+    
+    </section>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['dayGrid']
+            });
+
+            calendar.render();
+        });
+
+    </script>
+    
 
     <footer>
 
