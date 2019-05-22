@@ -165,11 +165,19 @@ nav.menu_baggrund ul li img {
     transform: scale(1.05);
 }
 
-
 .section1 {
     background-color: #074f4b;
     width: 100%;
     height: 60vh;
+}
+
+.section1 h1 {
+    position: relative;
+    color: #fff;
+    top: 40%;
+    text-align: center;
+    font-family: Overskrift;
+    font-size: 60px;
 }
 
 .indledning {
@@ -177,34 +185,41 @@ nav.menu_baggrund ul li img {
     height: 40vh;
     background-color: #00a87a;
     width: 100%;
-    margin-top: -50px;
+    margin-top: -10vh;
     -webkit-clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    text-align: center;
 }
 
 .indledning p {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    position: relative;
+    top: 35%;
+    width: 50%;
+    letter-spacing: 1px;
     color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: tekst;
+    text-align:left;
 }
 
 .baggrund {
     background-color: #008f8a;
     width: 100%;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .kalender_box {
     position: relative;
-    padding: 15px;
+    padding: 30px;
     width: 50%;
-    border-radius: 0px 50px 0px 50px;
+    border-radius: 0px 100px 0px 100px;
     background-color: #fff;
     margin-right: auto;
     margin-left: auto;
+    z-index: 600;
 }
 
 .kalender {
@@ -213,6 +228,27 @@ nav.menu_baggrund ul li img {
     background-color: #fff;
     margin-right: auto;
     margin-left: auto;
+    font-family: tekst;
+}
+
+.frivillig {
+    position: relative;
+    background-color: #074f4b;
+    z-index: 500;
+    height: 60vh;
+    margin-top: -15vh;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.frivillig p{
+    position: relative;
+    top: 35%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    font-family: tekst;
 }
 
 
