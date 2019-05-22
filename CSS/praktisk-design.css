@@ -79,8 +79,8 @@ nav {
     width: 100vw;
     transition: .8s;
     z-index: 999999;
-    
-     animation: fadein 2s;
+
+    animation: fadein 2s;
     -moz-animation: fadein 2s;
     /* Firefox */
     -webkit-animation: fadein 2s;
@@ -132,6 +132,7 @@ nav.menu_baggrund nav ul li a {
 nav ul li .tt.active {
     border: 1px solid #fff;
 }
+
 nav ul li .tt:hover {
 
     color: #fff;
@@ -166,11 +167,133 @@ nav.menu_baggrund ul li img {
 
 
 .section1 {
-    background-color: #008f8a;
+    background: url(../Billeder/praktisk%20reuse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
+
+
 }
 
+/*-----------------------------Praktisk -----------------------------*/
+.praktisk {
+    width: 100%;
+    height: 600px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #00a87b;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+
+}
+
+.tekstboks1 {
+    margin: 100px;
+    width: 60%;
+}
+
+h1 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+
+.broedtekst {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Tekst;
+    line-height: 40px;
+
+}
+
+/*--boks2--*/
+
+h2 {
+    color: #fff;
+    font-family: tekst;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.aabningstider {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 850px;
+    margin-top: -370px;
+    background-color: #156a5a;
+}
+
+
+.tekstboks2 {
+    position: absolute;
+    max-width: 60%;
+    bottom: 25%;
+    right: 5%;
+    text-align: right;
+}
+
+.kort{position}
+
+/*--Boks3---*/
+
+.aflever {
+    width: 100%;
+    height: 600px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #074f4b;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+
+}
+
+.tekstboks3 {
+    margin: 100px;
+    width: 60%;
+}
+
+/*---boks4---*/
+.afleverikke {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 850px;
+    margin-top: -370px;
+    background-color: #008f8a;
+}
+
+/*---boks5---*/
+
+.ladcykel {
+    width: 100%;
+    height: 600px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #00a87b;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+
+}
+/*--boks6---*/
+.kontakt {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 650px;
+    margin-top: -370px;
+    background-color: #156a5a;
+}
 
 /*-----------------------------FOOTER--------------------------------*/
 
