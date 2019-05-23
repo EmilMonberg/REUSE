@@ -1,9 +1,11 @@
   $(document).ready(function () {
       $('button').click(function () {
 
-          $('#hidden').delay(16500).fadeIn(2000);
+          $('#hidden').delay(13500).fadeIn(2000);
           $('.knap').fadeOut(500);
-          $('.animation').delay(16000).fadeOut(1000)
+          $('.spoergsmaal').fadeOut(500);
+          $('.animation').delay(13000).fadeOut(1000)
+          
       });
   });
 
@@ -19,4 +21,13 @@
       $(".knap").click(function () {
           $(".animation").attr("src", "Billeder/Skrald-til-Logo.gif");
       });
+
   });
+
+$(document).ready(function () {
+      $(".knap").click(function () {
+          $(".animation").attr("src", "Billeder/Skrald-til-Logo.gif");
+      });
+
+  });
+
