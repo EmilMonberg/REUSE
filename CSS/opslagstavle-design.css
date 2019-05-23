@@ -224,29 +224,31 @@ nav.menu_baggrund ul li ul li:hover {
 /*--------------------------Indhold----------------------*/
 
 .intro {
-    padding-top: 6vw;
+    padding-top: 2vw;
     width: 100%;
-    height: 50vw;
+    margin-top: -10vw;
+    height: 45vw;
     background-color: #156A5A;
     font-family: Overskrift;
     color: white;
     z-index: 300;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 h1 {
+    margin-top: 10%;
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 
 .it {
     color: white;
     font-family: Tekst;
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     margin-top: 5%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 17.5%;
+    margin-right: 15.5%;
 }
 
 .sec2 {
@@ -254,7 +256,7 @@ h1 {
     z-index: 200;
     margin-top: -160vw;
     width: 100%;
-    height: 190vw;
+    height: 171vw;
 }
 
 .sec4 {
@@ -263,13 +265,13 @@ h1 {
     margin-top: -45vw;
     width: 100%;
     height: 40vw;
-    -webkit-clip-path: polygon(0 30%, 0% 100%, 100% 100%);
-    clip-path: polygon(0 30%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(0 80%, 0% 100%, 100% 100%);
+    clip-path: polygon(0 80%, 0% 100%, 100% 100%);
 }
 
 .board {
-    width: 90%;
-    height: 120vw;
+    width: 60%;
+    height: 90vw;
     margin-top: -50vw;
     display: block;
     margin: auto;
@@ -282,81 +284,105 @@ h1 {
     position: absolute;
     color: white;
     margin-top: 6vw;
-    left: 29%;
+    left: 33%;
     font-family: tekst;
     z-index: 500;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .skabbillede {
     position: absolute;
-    margin-top: 24vw;
-    left: 20.5%;
-    width: 15vw;
-    height: 20vw;
+    margin-top: 20vw;
+    left: 28.5%;
+    width: 10vw;
+    height: 15vw;
     z-index: 1100;
-    border: solid 1px #074f4b;
 }
 
 .skabtekst {
     color: white;
     font-family: tekst;
-    font-size: 2vw;
+    font-size: 1.2vw;
     position: absolute;
-    margin-top: 21vw;
+    margin-top: 17vw;
     z-index: 1000;
     background-color: #008f8a;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 25%;
-    padding-bottom: 6%;
-    left: 14%;
+    padding-top: 20%;
+    padding-bottom: 3%;
+    left: 25%;
     box-shadow: 0 10px 10px rgba(0.2, 0.4, 0.4, 0.4);
 }
 
 .skoejtebillede {
     position: absolute;
-    margin-top: 44vw;
-    right: 14%;
-    width: 18vw;
-    height: 18vw;
+    margin-top: 37vw;
+    right: 26.5%;
+    width: 12vw;
+    height: 12vw;
     z-index: 1100;
-    border: solid 1px white;
 }
 
 .skoejtetekst {
     color: white;
     font-family: tekst;
-    font-size: 2vw;
+    font-size: 1.2vw;
     position: absolute;
-    margin-top: 22vw;
+    margin-top: 23vw;
     z-index: 1000;
     background-color: #074f4b;
     padding-left: 2%;
-    padding-right: 22%;
+    padding-right: 15%;
     padding-top: 2%;
     padding-bottom: 3%;
-    right: 13%;
+    right: 25.5%;
     box-shadow: 0 10px 10px rgba(0.2, 0.4, 0.4, 0.4);
 }
 
 .pin1 {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     z-index: 1100;
     position: absolute;
-    left: 27%;
-    margin-top: 18vw;
+    left: 33%;
+    margin-top: 16vw;
 }
 
 .pin2 {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     z-index: 1100;
     position: absolute;
-    right: 31%;
-    margin-top: 19vw;
+    right: 36.5%;
+    margin-top: 21vw;
     transform: rotate(-40deg);
+}
+
+.pin3 {
+    width: 3vw;
+    height: 3vw;
+    z-index: 1100;
+    position: absolute;
+    right: 48.5%;
+    margin-top: 53vw;
+    transform: rotate(-80deg);
+}
+
+.kagetekst {
+    color: white;
+    font-family: tekst;
+    font-size: 1.2vw;
+    position: absolute;
+    margin-top: 54vw;
+    z-index: 1000;
+    background-color: #00a87b;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    left: 25%;
+    box-shadow: 0 10px 10px rgba(0.2, 0.4, 0.4, 0.4);
 }
 
 /*-----------------------------FOOTER--------------------------------*/
