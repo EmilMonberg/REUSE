@@ -297,23 +297,14 @@ nav.menu_baggrund ul li ul li:hover {
 
 .section1 {
     background-color: white;
-    width: 100%;
-    height: 100vh;
+   max-width: 100%;
+    max-height: 100vh;
 }
-/*
-.skiftbaggrund {
-    background-color: blueviolet;
-    width: 100%;
-    height: 100vh;
-}*/
 
 .stort_logo {
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: .5s;
-    width: 500px;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
