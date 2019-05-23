@@ -1,10 +1,10 @@
   $(document).ready(function () {
       $('button').click(function () {
 
-          $('.hidden').delay(13500).fadeIn(3000);
-          $('.knap').fadeOut(500);
-          $('.spoergsmaal').fadeOut(500);
-          $('.animation').delay(13000).fadeOut(1000)
+          $('.hidden').delay(12400).fadeIn(3000);
+          $('.knap').fadeOut(1000);
+          $('.spoergsmaal').fadeOut(1000);
+          $('.animation').delay(12000).fadeOut(1000)
           
           
       });
@@ -22,7 +22,7 @@
 
   $(document).ready(function () {
       $(".knap").click(function () {
-          $(".animation").attr("src", "Billeder/Skrald-til-Logo.gif");
+          $(".animation").attr("src", "Billeder/Skrald-til-Logoframes");
       });
 
   });
