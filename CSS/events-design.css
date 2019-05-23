@@ -188,6 +188,7 @@ nav ul li ul li a {
     color: #fff;
     font-family: Overskrift;
     text-decoration: none;
+    display: block;
 }
 
 nav ul li:hover > ul, nav
@@ -217,7 +218,7 @@ nav.menu_baggrund ul li ul li:hover {
 .section1 {
     background-color: #074f4b;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
 }
 
 .section1 h1 {
@@ -231,7 +232,7 @@ nav.menu_baggrund ul li ul li:hover {
 
 .indledning {
     position: relative;
-    height: 40vh;
+    height: 30vh;
     background-color: #00a87a;
     width: 100%;
     margin-top: -10vh;
@@ -245,6 +246,7 @@ nav.menu_baggrund ul li ul li:hover {
     top: 35%;
     width: 50%;
     letter-spacing: 1px;
+    font-size: 20px;
     color: #fff;
     margin-right: auto;
     margin-left: auto;
@@ -294,6 +296,7 @@ nav.menu_baggrund ul li ul li:hover {
     position: relative;
     top: 35%;
     width: 50%;
+    font-size: 20px;
     margin-right: auto;
     margin-left: auto;
     color: #fff;

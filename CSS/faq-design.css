@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Overskrift';
+    src: url('../Fonts/Loew-Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Tekst';
+    src: url('../Fonts/Loew-Regular.otf') format('opentype');
+}
+
+/* Keyframes */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: 87%;
+    }
+
+    50% {
+        top: 90%;
+    }
+
+    100% {
+        top: 87%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 87%;
+    }
+
+    50% {
+        top: 90%;
+    }
+
+    100% {
+        top: 87%;
+    }
+}
+
+body {
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Navigations styling */
+
+header {
+    z-index: 9999;
+}
+
+nav {
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: .8s;
+    z-index: 999999;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+nav.menu_baggrund {
+    background: rgba(0, 0, 0, .8);
+    padding: 5px 0px;
+}
+
+
+
+nav.menu_baggrund ul li a {
+    color: white;
+}
+
+nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 2px;
+}
+
+nav ul li .tt {
+    font-size: 20px;
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-family: Overskrift;
+}
+
+nav ul li img {
+    line-height: 20px;
+}
+
+nav.menu_baggrund nav ul li a {
+    color: #fff;
+}
+
+
+nav ul li .tt:hover {
+
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    transition: 1s;
+    border-radius: 0px 15px 0px 15px;
+}
+
+nav.menu_baggrund ul li .tt.active,
+nav.menu_baggrund ul li .tt:hover {
+    color: #fff;
+    background: #008f8a;
+    transition: 1s;
+    border-radius: 0px 15px 0px 15px;
+}
+
+
+nav ul li ul {
+    position: absolute;
+    left: 1%;
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    margin-top: -18px;
+    font-size: 12px;
+    width: 98.5%;
+    color: #fff;
+}
+
+nav ul li ul li {
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav ul li ul li a {
+    color: #fff;
+    font-family: Overskrift;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover > ul,
+nav ul li ul:hover {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+nav ul li ul li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav.menu_baggrund ul li ul {
+    background-color: rgb(0, 143, 138);
+    left: 1%;
+    margin-top: -18px;
+    font-size: 15px;
+    width: 98.5%;
+    color: #fff;
+}
+
+nav.menu_baggrund ul li ul li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.lille_logo {
+    width: 110px;
+    padding: 10px 30px;
+    transition: 0.8s;
+
+}
+
+.lille_logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+nav.menu_baggrund ul li img {
+    margin-bottom: -100px;
+}
+
+
+.section1 {
+    position: relative;
+    background-color: #00A878;
+    width: 100%;
+    text-align: center;
+}
+
+
+.faq_intro {
+    position: relative;
+    background-color: #00A878;
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+}
+
+.faq_intro div {
+    position: relative;
+    text-align: center;
+    top: 30%;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq_intro h1 {
+    font-family: Overskrift;
+    color: #fff;
+    font-size: 50px;
+    text-align: left;
+
+
+}
+
+.faq_intro p {
+    color: #fff;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: tekst;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*----------------------------Faq-menu-------------------------------*/
+
+
+.faq {
+    position: relative;
+    background-color: #008F8A;
+    min-height: 100vh;
+
+}
+
+.menu {
+    margin-top: -15vh;
+    width: 50vw;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    z-index: 2;
+    
+
+}
+
+.menu_top {
+    background-color: #074F4B;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 5px;
+    font-family: Overskrift;
+}
+
+.collapsible {
+    z-index: 10;
+    background-color: #fff;
+    color: #074F4B;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #074F4B;
+    text-align: left;
+    outline: none;
+    font-family: overskrift;
+    font-size: 20px;
+
+}
+
+.collapsible.active,
+.collapsible:hover {
+    background-color: #00A878;
+    color: white;
+}
+
+.collapsible:after {
+    content: "\f063";
+    font-family: "Font Awesome 5 Free";
+    color: #074F4B;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: "\f062";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+}
+
+.content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fff;
+    color: #555;
+    font-family: tekst;
+    letter-spacing: 1px;
+    border-bottom: solid 1px #074F4B;
+}
+
+.content p {
+    padding: 25px;
+}
+
+.baggrund_mid {
+    height:  40vh;
+    margin-top: -40vh;
+    background-color: #074F4B;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+
+/*-----------------------------FOOTER--------------------------------*/
+
+footer {
+    min-height: 450px;
+    background-color: #262626;
+    color: #fff;
+    font-family: tekst;
+}
+
+.some {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.some div {
+    display: flex;
+    background-color: #074f4b;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.some a {
+    position: relative;
+    top: 15%;
+    text-decoration: none;
+    color: #262626;
+    font-size: 50px;
+}
+
+.some i {
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.info div {
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info h2 {
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    font-family: Overskrift;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.info p {
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-align: center;
+    font-family: Overskrift;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
