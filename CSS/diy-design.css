@@ -620,6 +620,7 @@ h1 {
     font-family: Overskrift;
     color: white;
     font-size: 20px;
+    margin-left: -5%;
 }
 
 .DIY p {
@@ -627,7 +628,10 @@ h1 {
     color: #fff;
     letter-spacing: 1px;
     font-size: 15px;
+    margin-left: -5%;
+    margin-right: 5%;
     font-family: Tekst;
+    text-align: left;
     line-height: 20px;
 }
 
@@ -704,7 +708,7 @@ margin-left: 8vw;
 padding-top: 3%;
 padding-bottom: 3%;
 padding-left: 5%;
-margin-top: -2vw;
+margin-top: -10vw;
 margin-right: 20%;
 background-color: rgb(7,79,75, 0.5);
 font-size: 18px;
@@ -712,39 +716,38 @@ font-size: 18px;
 
 .sek5 {
     grid-area: sek5;
-    margin-left: -10%;
-    width: 110%;
+    margin-left: 0;
+    width: 100%;
     height: 300px;
     transition: .5s;
-    margin-top: 2%;
+    margin-top: -16%;
 }
 
 .sek6 {
     grid-area: sek6;
-    width: 20vw;
-    height: 30vw;
+    margin-left: 0;
+    width: 100%;
+    height: 400px;
     transition: .5s;
-    margin-top: -10%;
-    margin-left: 21%;
+    margin-top: 2%;
 }
 
 .sek7 {
     grid-area: sek7;
-    width: 23vw;
-    height: 30vw;
+    margin-left: 0;
+    width: 100%;
+    height: 400px;
     transition: .5s;
-    margin-top: -5%;
-    margin-left: 7.5%;
-    margin-right: 10%;
+    margin-top: 2%;
 }
 
 .sek8 {
     grid-area: sek8;
-    width: 37vw;
-    height: 18vw;
-    margin-top: 3%;
-    margin-left: -5%;
+    margin-left: 0;
+    width: 100%;
+    height: 160px;
     transition: .5s;
+    margin-top: 2%;
     background-color: #156A5A;
 }
 
@@ -754,39 +757,39 @@ text-align: center;
 color: white;
 margin-top: 2%;
 margin-bottom: 5%;
-font-size: 2vw;
+font-size: 20px;
 }
 
 .mbt {
     font-family: Tekst;
     color: white;
-    font-size: 2vw;
-    margin-left: 11%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -25%;
 }
 .mb {
     display:block;
     transform: rotate(15deg);
-    width: 7vw;
-    margin-top: -22%;
+    width: 60px;
+    margin-top: -23vw;
     margin-left: 70%;
     }
 
 .sek9 {
     grid-area: sek9;
-    width: 23vw;
-    height: 30vw;
+    margin-left: 0;
+    width: 100%;
+    height: 400px;
     transition: .5s;
-    margin-top: 10%;
-    margin-left: 10.5%;
+    margin-top: 2%;
 }
 
 .fugle-t {
-    margin-top: 6vw;
-    margin-left: 1vw;
-    margin-right: 2vw;
+    margin-top: 9vw;
+    margin-right: 32%;
     padding: 10px;
     background-color: rgb(7,79,75, 0.5);
-    font-size: 2.5vw;
+    font-size: 25px;
     font-family: Overskrift;
     }
 
@@ -800,20 +803,20 @@ font-size: 2vw;
 
 .sek11 {
     grid-area: sek11;
-    width: 35vw;
-    height: 25vw;
+    margin-left: -10%;
+    width: 110%;
+    height: 300px;
     transition: .5s;
-    margin-bottom: 20%;
-    margin-top: -28%;
+    margin-top: 2%;
 }
 
 .recycle-t {
-    margin-top: 11vw;
-    margin-left: -2vw;
+    margin-top: 9vw;
     margin-right: 8vw;
+    margin-left: 8%;
     padding: 10px;
     background-color: rgb(7,79,75, 0.7);
-    font-size: 1.5vw;
+    font-size: 15px;
     font-family: Tekst;
 }
 
@@ -825,5 +828,30 @@ font-size: 2vw;
     margin-left: 5%;
 }
 
+.some {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.some a {
+    position: relative;
+    top: 0;
+    text-decoration: none;
+    color: #262626;
+    font-size: 40px;
+}
+
+.some div {
+    display: flex;
+    background-color: #074f4b;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    margin: 15px;
+    margin-top: 40px;
+    
+}
 
 }
