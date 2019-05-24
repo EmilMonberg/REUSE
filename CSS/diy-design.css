@@ -253,7 +253,7 @@ h2 {
     flex-wrap: wrap;
     position: relative;
     background-color: #008f8a;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
     
 }
@@ -445,7 +445,7 @@ font-size: 2vw;
     font-family: Tekst;
     color: white;
     font-size: 2vw;
-    margin-left: 11%;
+    margin-left: 0;
 }
 .mb {
     display:block;
@@ -770,7 +770,7 @@ font-size: 20px;
 .mb {
     display:block;
     transform: rotate(15deg);
-    width: 60px;
+    width: 6px;
     margin-top: -23vw;
     margin-left: 70%;
     }
@@ -808,6 +808,7 @@ font-size: 20px;
     height: 300px;
     transition: .5s;
     margin-top: 2%;
+    margin-bottom: 0;
 }
 
 .recycle-t {
@@ -850,7 +851,7 @@ font-size: 20px;
     width: 60px;
     justify-content: center;
     margin: 15px;
-    margin-top: 40px;
+    margin-top: 80px;
     
 }
 
