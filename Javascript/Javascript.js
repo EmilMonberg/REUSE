@@ -1,5 +1,6 @@
   $(document).ready(function () {
       $('button').click(function () {
+<<<<<<< Updated upstream
 
           $('.hidden').delay(12400).fadeIn(3000);
           $('.knap').fadeOut(1000);
@@ -7,6 +8,11 @@
           $('.animation').delay(12000).fadeOut(1000)
           
           
+=======
+          $('#hidden').delay(16500).fadeIn(2000);
+          $('.knap').fadeOut(500);
+          $('.animation').delay(16000).fadeOut(1000)
+>>>>>>> Stashed changes
       });
       
      
