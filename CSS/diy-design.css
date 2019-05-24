@@ -215,7 +215,7 @@ nav.menu_baggrund ul li ul li:hover {
 }
 
 .section1 {
-    background: url(../Billeder/DIY-banner.jpg);
+    background: url(../Billeder/DIY-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -712,11 +712,11 @@ font-size: 18px;
 
 .sek5 {
     grid-area: sek5;
-    width: 37vw;
-    height: 23vw;
+    margin-left: -10%;
+    width: 110%;
+    height: 300px;
     transition: .5s;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 2%;
 }
 
 .sek6 {
