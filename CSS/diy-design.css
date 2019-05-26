@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 @font-face {
     font-family: 'Overskrift';
     src: url('../Fonts/Loew-Heavy.otf') format('opentype');
@@ -76,7 +77,7 @@ nav {
     display: flex;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     transition: .8s;
     z-index: 999999;
 
@@ -215,18 +216,23 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .section1 {
     background: url(../Billeder/DIY-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width:105%;
     height: 120vh;
 }
 
 h1 {
     font-family: Overskrift;
     color: white;
-    font-size: 50px;
+    font-size: 4vw;
+    margin-top: 5%;
 }
 
 h2 {
@@ -245,8 +251,8 @@ h2 {
 }
 
 .DIY {
-    width: 100%;
-    height: 600px;
+    width: 105%;
+    height: 500px;
     z-index: 1000;
     margin-top: -500px;
     padding-bottom: 10%;
@@ -256,13 +262,14 @@ h2 {
     background-color: #008f8a;
     -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
 
 }
 
 .DIY_tekst {
     position: relative;
     max-width: 50%;
-    top: 53%;
+    top: 50%;
     left: 30%;
 }
 
@@ -277,7 +284,7 @@ h2 {
 .DIY p {
     color: #fff;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 2vw;
     font-family: Tekst;
     line-height: 40px;
 }
@@ -293,7 +300,8 @@ h2 {
         "sek4 sek5 sek6"
         "sek7 sek8 sek9"
         "sek10 sek11 sek12";
-        margin-top: -1%;
+        width: 105%;
+        margin-top: -1px;
     background-color: #008f8a;
 }
 
@@ -350,16 +358,19 @@ h2 {
 .sek1 {
     grid-area: sek1;
     width: 30vw;
+    max-width: 100%;
     height: 20vw;
     margin-left: 7.5%;
     transition: .5s;
+    overflow: none;
 }
 
 .sek2 {
     grid-area: sek2;
     width: 33vw;
+    max-width: 100%;
     height: 22vw;
-    margin-left: 7.5%;
+    margin-left: 2.5%;
     background-color: #074f4b;
     transition: .5s;
 }
@@ -375,12 +386,15 @@ h2 {
 .lb {
     display: block;
     width: 10vw;
+    max-width: 100%;
     margin: auto;
 }
 
 .sek3 {
     grid-area: sek3;
     width: 25vw;
+    margin-left: -7.5%;
+    max-width: 100%;
     height: 16vw;
     transition: .5s;
 }
@@ -388,6 +402,7 @@ h2 {
 .sek4 {
     grid-area: sek4;
     width: 27vw;
+    max-width: 100%;
     height: 20vw;
     margin-top: 5%;
     margin-left: 7.5%;
@@ -397,6 +412,7 @@ h2 {
 .plante-div {
     color: white;
     z-index: 800;
+    max-width: 100%;
     margin-top: 7vw;
     margin-left: 5vw;
     font-size: 1.5vw;
@@ -413,9 +429,10 @@ h2 {
 .sek5 {
     grid-area: sek5;
     width: 37vw;
+    max-width: 100%;
     height: 23vw;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 0;
     transition: .5s;
 }
 
@@ -423,14 +440,16 @@ h2 {
     grid-area: sek6;
     width: 18.7vw;
     height: 30vw;
+    max-width: 100%;
     margin-top: -10%;
-    margin-left: 21%;
+    margin-left: 13.5%;
     transition: .5s;
 }
 
 .sek7 {
     grid-area: sek7;
     width: 23vw;
+    max-width: 100%;
     height: 30vw;
     margin-top: -5%;
     margin-left: 7.5%;
@@ -441,6 +460,7 @@ h2 {
 .sek8 {
     grid-area: sek8;
     width: 37vw;
+    max-width: 100%;
     height: 18vw;
     margin-top: 3%;
     margin-left: -5%;
@@ -461,13 +481,21 @@ h2 {
     font-family: Tekst;
     color: white;
     font-size: 2vw;
-    margin-left: 5%;
+    margin-left: 0;
+}
+
+.mb-t {
+    font-family: Tekst;
+    color: white;
+    font-size: 2vw;
+    margin-left: 11.5%;
 }
 
 .mb {
     display: block;
     transform: rotate(15deg);
     width: 7vw;
+    max-width: 100%;
     margin-top: -22%;
     margin-left: 70%;
 }
@@ -475,9 +503,10 @@ h2 {
 .sek9 {
     grid-area: sek9;
     width: 21.9vw;
+    max-width: 100%;
     height: 30vw;
     margin-top: 10%;
-    margin-left: 10.5%;
+    margin-left: 3%;
     transition: .5s;
 }
 
@@ -494,6 +523,7 @@ h2 {
 .sek10 {
     grid-area: sek10;
     width: 20vw;
+    max-width: 100%;
     height: 20vw;
     margin-left: 5%;
     transition: .5s;
@@ -502,6 +532,7 @@ h2 {
 .sek11 {
     grid-area: sek11;
     width: 35vw;
+    max-width: 100%;
     height: 25vw;
     margin-bottom: 20%;
     margin-top: -28%;
@@ -521,6 +552,7 @@ h2 {
 .sek12 {
     grid-area: sek12;
     width: 20vw;
+    max-width: 100%;
     height: 20vw;
     margin-left: 5%;
     transition: .5s;
@@ -531,6 +563,59 @@ h2 {
 }
 
 
+.sofa-t {
+    margin-top: -20%;
+    margin-right: 50%;
+    margin-left: -7.9%;
+    padding: 10px;
+    background-color: rgb(7, 79, 75, 0.5);
+    font-size: 2vw;
+    font-family: Overskrift;
+}
+
+.ude-t {
+    margin-top: -23%;
+    margin-right: 60%;
+    margin-left: -29%;
+    padding: 10px;
+    background-color: rgb(7, 79, 75, 0.5);
+    font-size: 1.5vw;
+    font-family: Overskrift;
+}
+
+.skate-t {
+    margin-top: 5%;
+    margin-right: 40%;
+    margin-left: 0%;
+    padding: 10px;
+    background-color: rgb(7, 79, 75, 0.5);
+    font-size: 1.5vw;
+    font-family: Overskrift;
+}
+
+.krok-t {
+    margin-top: 3%;
+    margin-right: 50%;
+    margin-left: 0%;
+    padding: 10px;
+    background-color: rgb(7, 79, 75, 0.5);
+    font-size: 1.5vw;
+    font-family: Overskrift;
+}
+
+.baenk-t {
+    margin-top: 2vw;
+    margin-right: 50%;
+    margin-left: 0%;
+    padding: 10px;
+    background-color: rgb(7, 79, 75, 0.5);
+    font-size: 1.5vw;
+    font-family: Overskrift;
+}
+
+
+
+
 
 /*-----------------------------FOOTER--------------------------------*/
 
@@ -539,6 +624,7 @@ footer {
     min-height: 450px;
     background-color: #262626;
     color: #fff;
+    width: 105%;
     font-family: tekst;
 }
 
@@ -605,58 +691,6 @@ footer {
     letter-spacing: 5px;
 }
 
-.sofa-t {
-    margin-top: -10%;
-    margin-right: 50%;
-    margin-left: -8%;
-    padding: 10px;
-    background-color: rgb(7, 79, 75, 0.5);
-    font-size: 2vw;
-    font-family: Overskrift;
-}
-
-.ude-t {
-    margin-top: -15%;
-    margin-right: 70%;
-    margin-left: -20%;
-    padding: 10px;
-    background-color: rgb(7, 79, 75, 0.5);
-    font-size: 1.5vw;
-    font-family: Overskrift;
-}
-
-.skate-t {
-    margin-top: 5%;
-    margin-right: 40%;
-    margin-left: 0%;
-    padding: 10px;
-    background-color: rgb(7, 79, 75, 0.5);
-    font-size: 1.5vw;
-    font-family: Overskrift;
-}
-
-.krok-t {
-    margin-top: 3%;
-    margin-right: 40%;
-    margin-left: 0%;
-    padding: 10px;
-    background-color: rgb(7, 79, 75, 0.5);
-    font-size: 1.5vw;
-    font-family: Overskrift;
-}
-
-.baenk-t {
-    margin-top: 2vw;
-    margin-right: 50%;
-    margin-left: 0%;
-    padding: 10px;
-    background-color: rgb(7, 79, 75, 0.5);
-    font-size: 1.5vw;
-    font-family: Overskrift;
-}
-
-
-
 
 
 
@@ -665,12 +699,17 @@ footer {
 /* Mobil */
 @media only screen and (max-width: 750px) {
 
+    html {
+        overflow-x: hidden;
+    }
+
     .section1 {
         height: 300px;
     }
 
     .DIY {
         height: 300px;
+        width: 105%;
         margin-right: 0;
         margin-left: 0;
         margin-top: -150px;
@@ -692,7 +731,7 @@ footer {
         font-family: Overskrift;
         color: white;
         font-size: 20px;
-        margin-left: -5%;
+        margin-left: 0;
     }
 
     .DIY p {
@@ -700,11 +739,12 @@ footer {
         color: #fff;
         letter-spacing: 1px;
         font-size: 15px;
-        margin-left: -5%;
-        margin-right: 5%;
+        margin-left: 0;
+        margin-right: 10%;
         font-family: Tekst;
         text-align: left;
         line-height: 20px;
+        overflow: none;
     }
 
     .hammer-image {
@@ -712,7 +752,7 @@ footer {
         z-index: 300;
         width: 70px;
         height: 90px;
-        right: 6%;
+        right: 15%;
         top: 20%;
         transform: rotate(15deg);
     }
@@ -735,7 +775,7 @@ footer {
             "sek10"
             "sek11"
             "sek12";
-
+        width: 115%;
         background-color: black;
     }
 
@@ -743,7 +783,7 @@ footer {
         margin-top: 2%;
         margin-left: -10%;
         grid-area: sek1;
-        width: 110%;
+        width: 100%;
         height: 300px;
         margin-bottom: 0;;
     }
@@ -798,7 +838,7 @@ footer {
     .plante-t {
         margin-top: 8%;
         margin-right: 50%;
-        margin-left: 8%;
+        margin-left: 10%;
         padding: 10px;
         background-color: rgb(7, 79, 75, 0.5);
         font-size: 15px;
@@ -874,6 +914,7 @@ footer {
         color: white;
         margin-top: 2%;
         margin-bottom: 5%;
+        margin-right: 14%;
         font-size: 20px;
     }
 
@@ -883,6 +924,13 @@ footer {
         font-size: 20px;
         text-align: center;
         margin-left: -25%;
+    }
+
+    .mb-t {
+        width: 60%;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 220px;
     }
 
     .mb {
@@ -929,7 +977,7 @@ footer {
     .recycle-t {
         margin-top: 9vw;
         margin-right: 8vw;
-        margin-left: 8%;
+        margin-left: 13%;
         padding: 10px;
         background-color: rgb(7, 79, 75, 0.7);
         font-size: 15px;
@@ -961,8 +1009,8 @@ footer {
         display: flex;
         background-color: #074f4b;
         border-radius: 50%;
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         justify-content: center;
         margin: 15px;
         margin-top: 80px;
