@@ -214,6 +214,8 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/*---------------------Indhold------------------------*/
+
 .section1 {
     background: url(../Billeder/DIY-banner.png);
     background-repeat: no-repeat;
@@ -231,7 +233,6 @@ h1 {
 h2 {
     font-family: Overskrift;
 }
-
 
 .hammer-image {
     position: relative;

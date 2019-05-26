@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/*------------------------ Fonts ---------------------------*/
+
 @font-face {
     font-family: 'Overskrift';
     src: url('../Fonts/Loew-Heavy.otf') format('opentype');
@@ -13,7 +15,7 @@
     src: url('../Fonts/Loew-Regular.otf') format('opentype');
 }
 
-/* Keyframes */
+/*-------------------- Keyframes ---------------------------*/
 
 @keyframes fadein {
     from {
@@ -27,7 +29,7 @@
 
 @-moz-keyframes fadein {
 
-    /* Firefox */
+    /*------------------ Firefox ------------------------ */
     from {
         opacity: 0;
     }
@@ -39,7 +41,7 @@
 
 @-webkit-keyframes fadein {
 
-    /* Safari and Chrome */
+    /*-------------- Safari og Chrome -------------------*/
     from {
         opacity: 0;
     }
@@ -51,7 +53,7 @@
 
 @-o-keyframes fadein {
 
-    /* Opera */
+    /*--------------------- Opera -----------------------*/
     from {
         opacity: 0;
     }
@@ -70,6 +72,8 @@ body {
 header {
     z-index: 9999;
 }
+
+/*--------------- Navigationsbar styling -----------------*/
 
 nav {
     position: fixed;
@@ -216,7 +220,9 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/*------------- Navigationsbar styling slut ---------------*/
 
+/*-------------Øverste billede på siden-------------------*/
 .section1 {
     background: url(../Billeder/koncept-banner.png);
     background-repeat: no-repeat;
@@ -226,7 +232,7 @@ nav.menu_baggrund ul li ul li:hover {
    
 }
 
-/*-----------------------Tekst afsnit--------------------------------*/
+/*-----------------------INDHOLD-------------------------------*/
 
 .content {
     overflow: hidden;
@@ -244,6 +250,7 @@ nav.menu_baggrund ul li ul li:hover {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
     
 }
+/*----------------------Tekst styling -------------------------*/
 
 .koncept_tekst {
     position: relative;
@@ -267,6 +274,8 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: Tekst;
     line-height: 40px;
 }
+/*----------------------Tekst styling slut -------------------------*/
+
 
 .citat1 {
     position: relative;
@@ -284,6 +293,8 @@ nav.menu_baggrund ul li ul li:hover {
     right: 5%;
     text-align: right;
 }
+
+/*-----------------------Citationstegn-----------------------------*/
 
 .citationstegn1 {
     position: relative;
@@ -307,6 +318,9 @@ nav.menu_baggrund ul li ul li:hover {
     text-shadow: 1px 1px 1px #000000;
     transform: rotate(180deg);
 }
+/*---------------Citationstegn slut -----------------------------*/
+
+/*----------------------Tekst styling -------------------------*/
 
 .citat1 h2 {
     color: #fff;
@@ -323,6 +337,8 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: Tekst;
     line-height: 40px;
 }
+/*----------------------Tekst styling slut -------------------------*/
+/*-------------Sektion med containerbillede styling-------------*/
 
 .containerbillede {
     background: url(../Billeder/orange-container.JPG);
@@ -336,7 +352,7 @@ nav.menu_baggrund ul li ul li:hover {
     overflow: hidden;
   
 }
-
+/*------------------Sektion med cirkulær økonomi---------------*/
 .cirkulærøkonomi {
     position: relative;
     z-index: -1000;
@@ -345,6 +361,8 @@ nav.menu_baggrund ul li ul li:hover {
     margin-top: -290px;
     background-color: #008f8a;
 }
+
+/*----------------------Tekst styling -------------------------*/
 
 .cirkulærøkonomi_tekst {
     position: relative;
@@ -376,6 +394,9 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: Tekst;
     line-height: 40px;
 }
+/*----------------------Tekst styling slut -------------------------*/
+
+/*------------------Sektion med indretning--------------------------*/
 
 .indretning {
     position: relative;
@@ -387,6 +408,7 @@ nav.menu_baggrund ul li ul li:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
 }
 
+/*----------------------Tekst styling -------------------------*/
 .indretning_tekst {
     position: relative;
     max-width: 50%;
@@ -410,6 +432,7 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: tekst;
     line-height: 40px;
 }
+/*----------------------Tekst styling slut -------------------------*/
 
 .indretningsbillede {
     position: relative;
@@ -423,7 +446,7 @@ nav.menu_baggrund ul li ul li:hover {
     margin-top: -290px;
     
 }
-
+/*------------Mere end en genbrugsstation sektion--------------------*/
 .tekstboks1 {
     background-color: #008f8a;
     background-repeat: no-repeat;
@@ -432,6 +455,7 @@ nav.menu_baggrund ul li ul li:hover {
     height: 550px;
 }  
 
+/*----------------------Tekst styling -------------------------*/
 .tekstboks1_tekst {
     position: relative;
     max-width: 80%;
@@ -455,6 +479,9 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: tekst;
     line-height: 40px;
 }
+/*----------------------Tekst styling slut -------------------------*/
+/*----------------------INDHOLD SLUT---------------------------------*/
+
 
 /*-----------------------------FOOTER--------------------------------*/
 
@@ -480,7 +507,6 @@ footer {
     justify-content: center;
     margin: 50px;
 }
-
 
 .some a {
     position: relative;
@@ -526,6 +552,9 @@ footer {
     font-size: 20px;
     padding: 5px;
     letter-spacing: 5px;
+
+/*------------------------FOOTER slut-------------------------------*/
+
 <<<<<<< HEAD
 }
 

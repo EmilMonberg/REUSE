@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/*------------------------ Fonts ---------------------------*/
+
 @font-face {
     font-family: 'Overskrift';
     src: url('../Fonts/Loew-Heavy.otf') format('opentype');
@@ -13,7 +15,7 @@
     src: url('../Fonts/Loew-Regular.otf') format('opentype');
 }
 
-/* Keyframes */
+/*-------------------- Keyframes ---------------------------*/
 
 @keyframes fadein {
     from {
@@ -65,6 +67,8 @@ body {
     height: 100%;
     max-width: 100%;
 }
+
+/*--------------- Navigationsbar styling -----------------*/
 
 header {
     z-index: 9999;

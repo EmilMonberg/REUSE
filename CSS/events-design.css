@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/*------------------------ Fonts ---------------------------*/
+
 @font-face {
     font-family: 'Overskrift';
     src: url('../Fonts/Loew-Heavy.otf') format('opentype');
@@ -215,6 +217,7 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/*--------------------Indhold----------------------------*/
 .section1 {
     background-color: #074f4b;
     width: 100%;

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REUSE</title>
+    <meta name="description" content="Giv hvad du har. Tag hvad du kan bruge. REUSE er Aarhus’ innovative genbrugsstation, hvor du kan hente brugte ting gratis.">
+    <title>Velkommen til REUSE - Aarhus' gentænkte genbrugsstation</title>   
     <link rel="stylesheet" href="CSS/design.css">
     <link rel="stylesheet" href="core/main.css">
     <link rel="stylesheet" href="daygrid/main.css">
@@ -18,18 +19,24 @@
 
 <body>
 
+<!-------------------------------Start knap til animation-------------------------------->
+
     <section class="section1 skiftbaggrund">
+
         <h2 class="spoergsmaal">VIL DU GØRE NOGET GODT FOR DIG SELV OG MILJØET?</h2>
-        <button class="knap"><img src="Billeder/Forside%20knap.png"> </button>
+        <button class="knap"><img src="Billeder/Forside-knap.png" alt="Ja knap"> </button>
 
 
-        <img class="animation" src="Billeder/Skraldebunke.gif">
+        <img class="animation" src="Billeder/Skraldebunke.gif" alt="Skraldebunke i bevægelse">
 
+<!-----------------------------------Start knap slut------------------------------------->
         <header>
+
+<!------------------------------------Navigationsbar------------------------------------->
 
             <nav>
                 <ul>
-                    <li><a href="index.html"><img class="lille_logo" src="Billeder/logo-uden-baggrund.png"></a></li>
+                    <li><a href="index.html"><img class="lille_logo" src="Billeder/logo-uden-baggrund.png" alt="REUSE logo"></a></li>
                     <li><a href="koncept.html" class="tt">Koncept</a>
                     <li><a href="praktisk.html" class="tt">Praktisk</a>
                         <ul>
@@ -46,9 +53,14 @@
                 </ul>
             </nav>
 
+<!--------------------------------Navigationsbar slut------------------------------------->
+
+
+<!----------Dette vises efter animationen slutter - Logo kommer frem -------------->
+
             <div class="hidden" style="display: none">
 
-                <img class="stort_logo" src="Billeder/Reuse%20logo%20after.png">
+                <img class="stort_logo" src="Billeder/Reuse-logo-after.png" alt="REUSE logo på blå baggrund">
 
                 <p class="moto">GIV HVAD DU HAR<br>
                     TAG HVAD DU KAN BRUGE</p>
@@ -60,9 +72,10 @@
         </header>
 
     </section>
+   
+<div class="content">
 
-    <div class="content">
-
+<!----------------------------------Infographic start ------------------------------------>
 
         <section class="infographic">
 
@@ -74,8 +87,10 @@
 
             <div class="infographic_animationer">
 
+<!-------------------------Tekstboks, fade-in til infographic----------------------------->
 
-                <img src="Billeder/Infographic-Reuse.gif">
+
+                <img src="Billeder/Infographic-Reuse.gif" alt="Infografik af hvordan det fungerer">
 
                 <div class="step_1" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
 
@@ -139,14 +154,20 @@
 
             </div>
 
+<!--------------------------Javascript til at aktivere AOS plugin------------------------------>
+
             <script type="text/javascript">
                 AOS.init({
 
                 });
             </script>
+<!----------------------Javascript til at aktivere AOS plugin slut------------------------------>
 
         </section>
+<!--------------------------------------Infographic slut--------------------------------------->
 
+<!---------------------------------------Tekstafsnit start-------------------------------------->
+       
         <section class="praktisk_kalender">
 
             <div class="praktisk">
@@ -164,7 +185,7 @@
                 </div>
 
                 <div class="tegning">
-                    <a href="#"><img src="Billeder/information.png"></a>
+                    <a href="#"><img src="Billeder/information.png" alt="Informationssymbol"></a>
 
                 </div>
 
@@ -182,7 +203,7 @@
                     <a href="#"><button>LÆS MERE</button></a>
 
                 </div>
-                <a href="#"><img src="Billeder/Kalender.png"></a>
+                <a href="#"><img src="Billeder/Kalender.png" alt="Kalender"></a>
             </section>
 
         </section>
@@ -191,7 +212,7 @@
 
             <h2> Følg med på @REUSE_aarhus</h2>
 
-            <!-- SnapWidget -->
+<!------------------------------------ SnapWidget ------------------------------------------>
 
             <div style="display: flex; justify-content: center;">
 
@@ -215,7 +236,7 @@
 
                 </div>
 
-                <a href="#"><img src="Billeder/hammer.png"></a>
+                <a href="#"><img src="Billeder/hammer.png" alt="hammer"></a>
 
             </div>
 
@@ -232,10 +253,13 @@
                     <a href="#"><button>LÆS MERE</button></a>
 
                 </div>
-                <a href="#"><img src="Billeder/pin.png"></a>
+                <a href="#"><img src="Billeder/pin.png" alt="Tegnestift"></a>
             </section>
 
         </section>
+<!----------------------------------Tekstafsnit slut---------------------------------->
+       
+<!-----------------------------------------Footer------------------------------------->
 
         <footer>
 
@@ -282,7 +306,8 @@
         </footer>
 
     </div>
-    
+
+ <!-----------------------------------Footer slut------------------------------------->   
 
 </body>
 
