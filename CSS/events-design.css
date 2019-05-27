@@ -270,7 +270,7 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: #074f4b;
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 25vh;
     z-index: 5;
 }
 
@@ -297,6 +297,11 @@ nav.menu_baggrund ul li ul li:hover {
     margin-left: auto;
     font-family: tekst;
 
+}
+
+.intro_tekst {
+    height: 50vh;
+    background-color: #074f4b;
 }
 
 .events {
