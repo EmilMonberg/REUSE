@@ -511,7 +511,23 @@ footer {
 
 /*-------------------------------------------MEDIA QUERY-----------------------------------*/
 
+
 @media (max-width: 1010px) {
+
+    .faq_intro {
+        padding-bottom: 20%;
+    }
+
+    .faq {
+        position: relative;
+        background-color: #008F8A;
+        min-height: 100vh;
+        margin-top: -25%;
+    }
+
+    .menu {
+        margin-top: 0;
+    }
 
     nav {
         display: none;
@@ -573,5 +589,17 @@ footer {
         justify-content: center;
         margin: 15px;
         margin-top: 80px;
+}
 
 }
+
+@media (max-width: 600px) {
+    
+    .faq {
+        position: relative;
+        background-color: #008F8A;
+        min-height: 100vh;
+        margin-top: -34.5%;
+    }
+}
+
