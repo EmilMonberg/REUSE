@@ -98,8 +98,56 @@ body {
 
 /* Navigations styling */
 
-header {
-    z-index: 9999;
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.topnav a img {
+    width: 120px;
+}
+
+.topnav #myLinks {
+    display: none;
+    text-transform: uppercase;
+}
+
+.topnav #myLinks a {
+    text-align: center;
+}
+
+.topnav a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-family: overskrift;
+    border-bottom: 1px solid #fff;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    right: 0;
+    top: 0;
+    border-bottom: none;
+}
+
+
+.topnav div a:hover {
+    background-color: #074f4b;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .0);
+    color: white;
 }
 
 nav {
@@ -308,15 +356,13 @@ nav.menu_baggrund ul li img {
 
 .menu {
     margin-top: -15vh;
-    width: 50vw;
+    width: 60vw;
     position: relative;
     margin-right: auto;
     margin-left: auto;
     padding-top: 20px;
     padding-bottom: 40px;
     z-index: 2;
-    
-
 }
 
 .menu_top {
@@ -383,7 +429,7 @@ nav.menu_baggrund ul li img {
 }
 
 .baggrund_mid {
-    height:  40vh;
+    height: 40vh;
     margin-top: -40vh;
     background-color: #074F4B;
     -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
@@ -460,4 +506,72 @@ footer {
     font-size: 20px;
     padding: 5px;
     letter-spacing: 5px;
+}
+
+
+/*-------------------------------------------MEDIA QUERY-----------------------------------*/
+
+@media (max-width: 1010px) {
+
+    nav {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+        z-index: 999999;
+    }
+
+    .faq_intro h1 {
+        font-family: Overskrift;
+        color: #fff;
+        font-size: 6vw;
+        text-align: left;
+    }
+
+    .faq_intro p {
+        color: #fff;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: tekst;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .menu {
+        margin-top: -15vh;
+        width: 90vw;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        z-index: 2;
+    }
+    
+     .some {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .some a {
+        position: relative;
+        top: 0;
+        text-decoration: none;
+        color: #262626;
+        font-size: 35px;
+    }
+
+    .some div {
+        display: flex;
+        background-color: #074f4b;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        margin: 15px;
+        margin-top: 80px;
+
 }

@@ -72,6 +72,56 @@ body {
 
 header {
     z-index: 9999;
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.topnav a img {
+    width: 120px;
+}
+
+.topnav #myLinks {
+    display: none;
+    text-transform: uppercase;
+}
+
+.topnav #myLinks a {
+    text-align: center;
+}
+
+.topnav a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-family: overskrift;
+    border-bottom: 1px solid #fff;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    right: 0;
+    top: 0;
+    border-bottom: none;
+}
+
+
+.topnav div a:hover {
+    background-color: #074f4b;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .0);
+    color: white;
 }
 
 nav {
@@ -460,4 +510,18 @@ footer {
     font-size: 20px;
     padding: 5px;
     letter-spacing: 5px;
+}
+
+/*-------------------------------------------MEDIA QUERY-----------------------------------*/
+
+@media (max-width: 1010px) {
+
+    nav {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+        z-index: 999999;
+    }
 }
