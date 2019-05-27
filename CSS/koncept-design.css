@@ -403,7 +403,7 @@ nav.menu_baggrund ul li ul li:hover {
 
 }
 /*------------------Sektion med cirkulær økonomi---------------*/
-.cirkulærøkonomi {
+.cirkulaeroekonomi {
     position: relative;
     z-index: -1000;
     width: 100%;
@@ -414,14 +414,14 @@ nav.menu_baggrund ul li ul li:hover {
 
 /*----------------------Tekst styling -------------------------*/
 
-.cirkulærøkonomi_tekst {
+.cirkulaeroekonomi_tekst {
     position: relative;
     max-width: 70%;
     top: 30%;
     left: 10%;
 }
 
-.cirkulærøkonomi h2 {
+.cirkulaeroekonomi h2 {
     color: #fff;
     font-family: overskrift;
     font-size: 50px;
@@ -429,7 +429,7 @@ nav.menu_baggrund ul li ul li:hover {
     text-shadow: 1px 1px 1px #000000;
 }
 
-.cirkulærøkonomi h3 {
+.cirkulaeroekonomi h3 {
     color: #fff;
     font-family: tekst;
     font-size: 35px;
@@ -437,7 +437,7 @@ nav.menu_baggrund ul li ul li:hover {
     text-shadow: 1px 1px 1px #000000;
 }
 
-.cirkulærøkonomi p {
+.cirkulaeroekonomi p {
     color: #fff;
     letter-spacing: 1px;
     font-size: 20px;
@@ -729,7 +729,7 @@ footer {
         overflow: hidden;
     }
 
-    .cirkulærøkonomi {
+    .cirkulaeroekonomi {
         position: relative;
         z-index: -1000;
         width: 100%;
@@ -740,7 +740,7 @@ footer {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
 
-    .cirkulærøkonomi_tekst {
+    .cirkulaeroekonomi_tekst {
         position: relative;
         max-width: 100%;
         top: 10%;
@@ -748,7 +748,7 @@ footer {
         padding: 20px;
     }
 
-    .cirkulærøkonomi h2 {
+    .cirkulaeroekonomi h2 {
         color: #fff;
         font-family: overskrift;
         font-size: 7vw;
@@ -756,7 +756,7 @@ footer {
         text-shadow: 1px 1px 1px #000000;
     }
 
-    .cirkulærøkonomi h3 {
+    .cirkulaeroekonomih3 {
         color: #fff;
         font-family: tekst;
         font-size: 5vw;
@@ -764,7 +764,7 @@ footer {
         text-shadow: 1px 1px 1px #000000;
     }
 
-    .cirkulærøkonomi p {
+    .cirkulaeroekonomi p {
         color: #fff;
         letter-spacing: 1px;
         font-size: 15px;
