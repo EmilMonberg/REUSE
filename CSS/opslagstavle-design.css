@@ -70,8 +70,6 @@ body {
 
 /*--------------- Navigationsbar styling -----------------*/
 
-header {
-    z-index: 9999;
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .8);

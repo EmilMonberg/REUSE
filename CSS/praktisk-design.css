@@ -72,6 +72,7 @@ body {
 
 header {
     z-index: 9999;
+}
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .8);
@@ -353,11 +354,6 @@ h1 {
     font-family: Tekst;
     line-height: 40px;
 
-}
-
-
-.kort {
-    position
 }
 
 /*--Boks3---*/
@@ -659,7 +655,7 @@ footer {
     }
 
     .section1 {
-        background: url(../Billeder/praktisk%20reuse.png);
+        background: url(../Billeder/praktisk-reuse.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

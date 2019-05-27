@@ -96,6 +96,7 @@ body {
     max-width: 100%;
 }
 
+/*--------------- Navigationsbar styling -----------------*/
 
 .topnav {
     overflow: hidden;
@@ -107,7 +108,6 @@ body {
     left: 0;
 }
 
-/*--------------- Navigationsbar styling -----------------*/
 
 .topnav #myLinks {
     display: none;
@@ -116,6 +116,10 @@ body {
 
 .topnav #myLinks a {
     text-align: center;
+}
+
+.topnav a img {
+    width: 120px;
 }
 
 .topnav a {
@@ -147,10 +151,6 @@ body {
     color: white;
 }
 
-/* Navigations styling */
-
-
-
 nav {
     position: fixed;
     justify-content: center;
@@ -173,7 +173,7 @@ nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
     padding: 5px 0px;
 }
-
+/*------------- Navigations styling slut ----------------- */
 
 /*--------------Animation med knap styling-----------------*/
 

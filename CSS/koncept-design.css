@@ -275,7 +275,7 @@ nav.menu_baggrund ul li ul li:hover {
     background: url(../Billeder/koncept-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: 100%;
     height: 75vh;
 
