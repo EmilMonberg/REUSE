@@ -402,7 +402,7 @@ h2 {
 
 
 
-
+/* ----------- Sektion 1 / Palle-sofa ----------*/
 .sek1 {
     grid-area: sek1;
     width: 30vw;
@@ -413,6 +413,7 @@ h2 {
     overflow: none;
 }
 
+/* -------------- Sektion 2 / Byg din egen lampe ------------*/
 .sek2 {
     grid-area: sek2;
     width: 33vw;
@@ -438,6 +439,7 @@ h2 {
     margin: auto;
 }
 
+/* -------------- Sektion 3 / Palle-bænk --------------*/
 .sek3 {
     grid-area: sek3;
     width: 25vw;
@@ -446,7 +448,7 @@ h2 {
     height: 16vw;
     transition: .5s;
 }
-
+/* --------------- Sektion 4 / Plante dekoration-------------*/
 .sek4 {
     grid-area: sek4;
     width: 27vw;
@@ -473,7 +475,7 @@ h2 {
     background-color: rgb(7, 79, 75, 0.5);
     font-size: 1.5vw;
 }
-
+/* ------------- Sektion 5 / Krokodille ---------*/
 .sek5 {
     grid-area: sek5;
     width: 37vw;
@@ -483,7 +485,7 @@ h2 {
     margin-left: 0;
     transition: .5s;
 }
-
+/* --------------- Sektion 6 / Skateboard-guitar ----*/
 .sek6 {
     grid-area: sek6;
     width: 18.7vw;
@@ -493,7 +495,7 @@ h2 {
     margin-left: 13.5%;
     transition: .5s;
 }
-
+/* ----------- Sektion 7 / Bænk med stålkant --------*/
 .sek7 {
     grid-area: sek7;
     width: 23vw;
@@ -504,7 +506,7 @@ h2 {
     margin-right: 10%;
     transition: .5s;
 }
-
+/* ------------- Sektion 8 / Instagram reklame -------*/
 .sek8 {
     grid-area: sek8;
     width: 37vw;
@@ -547,7 +549,7 @@ h2 {
     margin-top: -22%;
     margin-left: 70%;
 }
-
+/* ------------ Sektion 9 / DIY træfugle ----------*/
 .sek9 {
     grid-area: sek9;
     width: 21.9vw;
@@ -567,7 +569,7 @@ h2 {
     font-size: 2vw;
     font-family: Overskrift;
 }
-
+/* ----------- Sektion 10 ----------- */
 .sek10 {
     grid-area: sek10;
     width: 20vw;
@@ -576,7 +578,7 @@ h2 {
     margin-left: 5%;
     transition: .5s;
 }
-
+/* ------------ Sektion 11 / Tricks til affaldssortering --*/
 .sek11 {
     grid-area: sek11;
     width: 35vw;
@@ -597,20 +599,13 @@ h2 {
     font-family: Tekst;
 }
 
-.sek12 {
-    grid-area: sek12;
-    width: 20vw;
-    max-width: 100%;
-    height: 20vw;
-    margin-left: 5%;
-    transition: .5s;
-}
+/*--- Sektioner slut ----*/
 
 .skygge {
     box-shadow: 0 10px 10px rgba(0.2, 0.2, 0.2, 0.2);
 }
 
-
+/* -------- Tekstbokse på billeder ----*/
 .sofa-t {
     margin-top: -20%;
     margin-right: 50%;
@@ -756,11 +751,8 @@ footer {
 
 /* ------------------- MEDIA QUARIES -----------------*/
 
-
-
-
-/* Mobil */
-@media only screen and (max-width: 750px) {
+/* ------------- Mobil version ------------- */
+@media only screen and (max-width: 550px) {
 
     html {
         overflow-x: hidden;
@@ -841,7 +833,7 @@ footer {
         width: 115%;
         background-color: black;
     }
-
+/* ------ Sektion 1 / Palle-sofa ------*/
     .sek1 {
         margin-top: 2%;
         margin-left: -10%;
@@ -875,14 +867,14 @@ footer {
         font-family: Overskrift;
     }
 
-
+    /* -------- Sektion 3 / Udendørs pallebænk ----- */
     .sek3 {
         margin-top: 2%;
         grid-area: sek3;
         width: 100%;
         height: 300px;
     }
-
+/* --------- Sektion 4 / Plantedekoration ------*/
     .sek4 {
         grid-area: sek4;
         margin-left: -10%;
@@ -907,7 +899,7 @@ footer {
         font-size: 15px;
         font-family: tekst;
     }
-
+    /* ------ Sektion 5 / krokodille ------ */
     .sek5 {
         grid-area: sek5;
         margin-left: 0;
@@ -925,7 +917,7 @@ footer {
         font-size: 25px;
         font-family: Overskrift;
     }
-
+/* ------ Sektion 6 / Skateboard-guitar -----*/
     .sek6 {
         grid-area: sek6;
         margin-left: 0;
@@ -943,7 +935,7 @@ footer {
         font-size: 25px;
         font-family: Overskrift;
     }
-
+/* ----- Sektion 7 / bænk med stålkant --- */
     .sek7 {
         grid-area: sek7;
         margin-left: 0;
@@ -961,7 +953,7 @@ footer {
         font-size: 25px;
         font-family: Overskrift;
     }
-
+/* -------- Sektion 8 / Instagram reklame -------- */
     .sek8 {
         grid-area: sek8;
         margin-left: 0;
@@ -1003,7 +995,7 @@ footer {
         margin-top: -23vw;
         margin-left: 70%;
     }
-
+/* -------- Sektion 9 / DIY Træfugle ---------- */
     .sek9 {
         grid-area: sek9;
         margin-left: 0;
@@ -1020,14 +1012,14 @@ footer {
         font-size: 25px;
         font-family: Overskrift;
     }
-
+/* ---------- Sektion 10 ------ */
     .sek10 {
         grid-area: sek10;
         width: 20vw;
         height: 20vw;
         margin-left: 5%;
     }
-
+/* -------- Sektion 11 / Affaldssortering ------ */
     .sek11 {
         grid-area: sek11;
         margin-left: -10%;
@@ -1046,7 +1038,7 @@ footer {
         font-size: 15px;
         font-family: Tekst;
     }
-
+/* --------- Sektion 12 --------- */
     .sek12 {
         grid-area: sek12;
         width: 20vw;
@@ -1054,6 +1046,7 @@ footer {
         margin-left: 5%;
     }
 
+    /* ---- Footer ------*/
     .some {
         display: flex;
         flex-wrap: nowrap;
