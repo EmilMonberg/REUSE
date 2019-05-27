@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="daygrid/main.css">
     <link rel="stylesheet" href="CSS/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="Javascript/Javascript.js"></script>
     <script src="Javascript/aos.js"></script>
@@ -18,12 +19,34 @@
 
 <body>
 
-    <section class="section1 skiftbaggrund">
-        <h2 class="spoergsmaal">VIL DU GØRE NOGET GODT FOR DIG SELV OG MILJØET?</h2>
-        <button class="knap"><img src="Billeder/Forside%20knap.png"> </button>
+
+    <div class="topnav">
+        <a href="index.html" class="active"><img src="Billeder/logo-uden-baggrund.png"></a>
+        <div id="myLinks">
+            <a href="koncept.html">Koncept</a>
+            <a href="praktisk.html">Praktisk</a>
+            <a href="faq.html">FAQ</a>
+            <a href="events.html">Events</a>
+            <a href="diy.html">DIY</a>
+            <a href="opslagstavle.html">Opslagstavle</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
 
-        <img class="animation" src="Billeder/Skraldebunke.gif">
+
+    <section class="section1">
+
+        <div class="skrald">
+            <h2 class="spoergsmaal">VIL DU GØRE NOGET GODT FOR DIG SELV OG MILJØET?</h2>
+            <button class="knap"><img src="Billeder/Forside%20knap.png"> </button>
+
+
+            <img class="animation" src="Billeder/Skraldebunke.gif">
+
+        </div>
 
         <header>
 
@@ -31,14 +54,11 @@
                 <ul>
                     <li><a href="index.html"><img class="lille_logo" src="Billeder/logo-uden-baggrund.png"></a></li>
                     <li><a href="koncept.html" class="tt">Koncept</a>
-                    <li><a href="praktisk.html" class="tt">Praktisk</a>
+                    <li><a href="#" class="tt">Praktisk</a>
                         <ul>
-                           
                             <li><a href="praktisk.html">INFORMATION</a></li>
                             <li><a href="faq.html">FAQ</a></li>
-
                         </ul>
-
                     </li>
                     <li><a href="events.html" class="tt">Events</a></li>
                     <li><a href="diy.html" class="tt">DIY</a></li>
@@ -46,14 +66,14 @@
                 </ul>
             </nav>
 
-            <div class="hidden" style="display: none">
+            <div class="hidden">
 
                 <img class="stort_logo" src="Billeder/Reuse%20logo%20after.png">
 
                 <p class="moto">GIV HVAD DU HAR<br>
                     TAG HVAD DU KAN BRUGE</p>
 
-                <div class="scroll-indicator fa fa-chevron-down"></div>
+                <div class="scroll-indicator fa fa-chevron-down" style="font-size: 50px;"></div>
 
             </div>
 
@@ -155,7 +175,7 @@
 
                     <h2>PRAKTISK</h2>
                     <br>
-                    <p> REUSE er et genbrugsprojekt under AffaldVarme Aarhus. Konceptet er en del af Aarhus Kommunes storskraldsordning, hvor dine brugte ting som borger i Aarhus Kommune, kan give glæde til andre  - og du kan få glæde af andres aflagte ting. Du kan altså aflevere og afhente brugte møbler og byggemateriale helt gratis på REUSE-pladsen i Sydhavnen alle hverdage fra kl. 12-17.</p>
+                    <p> REUSE er et genbrugsprojekt under AffaldVarme Aarhus. Konceptet er en del af Aarhus Kommunes storskraldsordning, hvor dine brugte ting som borger i Aarhus Kommune, kan give glæde til andre - og du kan få glæde af andres aflagte ting. Du kan altså aflevere og afhente brugte møbler og byggemateriale helt gratis på REUSE-pladsen i Sydhavnen alle hverdage fra kl. 12-17.</p>
                     <br>
                     <br>
 
@@ -190,12 +210,12 @@
         <section class="insta">
 
             <h2> Følg med på @REUSE_aarhus</h2>
-
-            <!-- SnapWidget -->
-
-            <div style="display: flex; justify-content: center;">
-
-            </div>
+            
+            <div class="billede_box">
+            <div class="box"><a href="#"><img src="Billeder/REUSE-stuen.jpg"></a></div>
+            <div class="box"><a href="#"><img src="Billeder/REUSE-Skilt.jpg"></a></div>
+            <div class="box"><a href="#"><img src="Billeder/REUSE-Studiet.jpg"></a></div>
+                </div>
 
         </section>
 
@@ -207,7 +227,7 @@
 
                     <h2>DO IT YOURSELF</h2>
                     <br>
-                    <p> På REUSE synes vi at upcycling er knaldhamrende sejt - og så er det en nem måde at spare penge på (især når man kan finde gratis ting på REUSE) og så er det bæredygtigt. Derfor har vores frivillige lavet nogle forskellige tips og tricks til, hvordan du selv kan bygge og restaurere dine ting, så du slipper for at tage ud at købe nyt.  </p>
+                    <p> På REUSE synes vi at upcycling er knaldhamrende sejt - og så er det en nem måde at spare penge på (især når man kan finde gratis ting på REUSE) og så er det bæredygtigt. Derfor har vores frivillige lavet nogle forskellige tips og tricks til, hvordan du selv kan bygge og restaurere dine ting, så du slipper for at tage ud at købe nyt. </p>
                     <br>
                     <br>
 
@@ -241,18 +261,16 @@
 
             <div class="some">
                 <div>
-
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/ReUseAarhus/?__tn__=kC-R&eid=ARDqJ_16GaVGAjNnY6hLx6lP2ZWdSwpXhvVWdDsYKSbAvOIrVlYm9CfefMggSfteZh2-srI-9mSSNxZO&hc_ref=ARRfiKibSlAPmIbMzUbAHokfEHphyISk5dZiwDyg6EilOLCKIB14QnBppUBYDqRkGX8&fref=nf&__xts__[0]=68.ARBwF-g8YNpYIG56G9BTeMiQTSCGLUAI7epL1bSUnyKLN-YvhNwZLawiB6MRPyfHcFKgGoBW-V1cLYZcl2lSyqPQzBf0hOgW4c1bTsfyhqGhDJcg5e_1G-dNV0DEv1wYEr2dzu6ijMaqMW9bHR7XBtT4vCXohXtb9rv5DGdlYNlcv_4dxU7Q9McnR1lrohBVztxjwCJIhambTFPCZ3fuqFq1XBMAp3J8L8SWHqoYY4it1S8BEG96l-yVN6PZNJoLbNIhFSiSr277TyDGxjPYay5ja6iA3UdH1_-wbrSx0x6YlHkU0X3ShSVRLj4Z4KRqNV4gdvAyJ1rwAxdXMUGlZdW5PrPCvuCw2ztgGhfi"><i class="fab fa-facebook-f"></i></a>
                 </div>
 
                 <div>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/explore/locations/720612896/reuse-aarhus/"><i class="fab fa-instagram"></i></a>
                 </div>
 
                 <div>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/user/aakvideosite"><i class="fab fa-youtube"></i></a>
                 </div>
-
             </div>
 
             <div class="info">
@@ -277,12 +295,12 @@
             <div class="copyright">
                 <p>REUSE</p>
             </div>
-        
+
 
         </footer>
 
     </div>
-    
+
 
 </body>
 
