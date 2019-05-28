@@ -20,21 +20,7 @@
 
   $(document).ready(function () {
       $(".knap").click(function () {
-          $(".animation").attr("src", "Billeder/Skrald-til-Logoframes");
-      });
-
-  });
-  /*
-  $(document).ready(function() {
-    $(".knap").click(function() {
-      var p = $(".section1").delay(3000).css("background-color", "#008f8a");
-
-    });
-  });
-  */
-  $(document).ready(function () {
-      $(".knap").click(function () {
-          $(".animation").attr("src", "Billeder/Skrald-til-Logo.gif");
+          $(".animation").attr("src", "Billeder/Skrald-til-Logo-8.gif");
       });
 
   });

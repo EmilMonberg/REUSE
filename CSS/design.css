@@ -794,10 +794,25 @@ h1 {
 /*--------------------Instagram slut-------------------------------*/
 
 .insta {
+    position: relative;
     text-align: center;
     background-color: #262626;
     color: #fff;
 }
+
+.insta h2 {
+    font-family: Overskrift;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+.insta h2 img {
+    width: 30px;
+    padding-top: 7.5px;
+    position: absolute;
+}
+
+
 
 .billede_box {
     display: flex;
@@ -814,11 +829,6 @@ h1 {
     max-width: 100%;
 }
 
-.insta h2 {
-    font-family: Overskrift;
-    letter-spacing: 1px;
-    padding: 15px;
-}
 
 /*--------------------Instagram slut--------------------------*/
 

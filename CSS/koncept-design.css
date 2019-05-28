@@ -309,7 +309,7 @@ nav.menu_baggrund ul li ul li:hover {
     left: 10%;
 }
 
-.koncept h2 {
+.koncept h1 {
     color: #fff;
     font-family: overskrift;
     font-size: 50px;
@@ -667,7 +667,7 @@ footer {
         padding: 20px;
     }
 
-    .koncept h2 {
+    .koncept h1 {
         color: #fff;
         font-family: overskrift;
         font-size: 7vw;
@@ -703,7 +703,6 @@ footer {
         padding: 20px;
         text-align: right;
     }
-
 
     .citat1 h2 {
         color: #fff;
