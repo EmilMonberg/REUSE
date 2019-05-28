@@ -20,7 +20,7 @@
 
   $(document).ready(function () {
       $(".knap").click(function () {
-          $(".animation").attr("src", "Billeder/Skrald-til-Logo-8.gif");
+          $(".animation").attr("src", "Billeder/skrald-til-logo-8.gif");
       });
 
   });
