@@ -1,10 +1,10 @@
   $(document).ready(function () {
       $('button').click(function () {
 
-          $('.hidden').delay(12400).fadeIn(3000);
-          $('.knap').fadeOut(1000);
-          $('.spoergsmaal').fadeOut(1000);
-          $('.animation').delay(12000).fadeOut(1000)
+          $('.hidden').delay(8000).fadeIn(2000);
+          $('.knap').fadeOut(500);
+          $('.spoergsmaal').fadeOut(500);
+          $('.animation').delay(7000).fadeOut(1000)
 
       });
   });

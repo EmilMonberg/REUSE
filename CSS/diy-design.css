@@ -303,8 +303,8 @@ h2 {
     z-index: 300;
     width: 200px;
     height: 200px;
-    right: -20%;
-    top: 35%;
+    right: 10%;
+    top: 20%;
     transform: rotate(15deg);
 }
 
@@ -312,8 +312,6 @@ h2 {
     width: 100%;
     z-index: 1000;
     padding-bottom: 5%;
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
     background-color: #008f8a;
     overflow: hidden;
@@ -323,14 +321,14 @@ h2 {
 .DIY_tekst {
     position: relative;
     max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    top: 10%;
+    left: 10%;
 }
 
 .DIY h1 {
     color: #fff;
     font-family: overskrift;
-    font-size: 40px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #555;
 }
@@ -678,7 +676,7 @@ footer {
     min-height: 450px;
     background-color: #262626;
     color: #fff;
-    width: 105%;
+    width: 100%;
     font-family: tekst;
 }
 
@@ -756,6 +754,16 @@ footer {
         display: block;
         z-index: 999999;
     }
+
+    .hammer-image {
+        position: absolute;
+        z-index: 300;
+        width: 200px;
+        height: 200px;
+        right: 5%;
+        top: 20%;
+        transform: rotate(15deg);
+    }
 }
 
 
@@ -772,37 +780,37 @@ footer {
         height: 300px;
     }
 
-    .DIY {
-        height: 300px;
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: -150px;
-        background-color: #008f8a;
-        -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    .hammer-image {
+        display: none;
     }
 
+    .DIY {
+        width: 100%;
+        z-index: 1000;
+        padding-bottom: 0%;
+        position: relative;
+        background-color: #008f8a;
+        overflow: hidden;
+
+    }
 
     .DIY_tekst {
         position: relative;
         max-width: 100%;
-        top: 25%;
+        top: 0%;
+        left: 0%;
         padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    .DIY h2 {
+    .DIY h1 {
         font-family: Overskrift;
         color: white;
-        font-size: 20px;
-        margin-left: 0;
+        font-size: 5vw;
     }
 
     .DIY p {
         color: #fff;
-        margin-left: 0px;
+        margin-left: 0;
         letter-spacing: 1px;
         font-size: 15px;
         font-family: Tekst;
@@ -816,7 +824,7 @@ footer {
         width: 70px;
         height: 90px;
         right: 15%;
-        top: 20%;
+        top: 15%;
         transform: rotate(15deg);
     }
 

@@ -305,13 +305,13 @@ nav.menu_baggrund ul li ul li:hover {
     width: 75%;
     position: relative;
     top: 10%;
-    left: 5%;
+    left: 10%;
 }
 
 h1 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
 
 }
@@ -338,7 +338,7 @@ h1 {
 
 .tekstboks2 {
     position: absolute;
-    max-width: 70%;
+    max-width: 60%;
     bottom: 30%;
     right: 5%;
     text-align: right;
@@ -348,7 +348,7 @@ h1 {
 .tekstboks2 h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
 }
 
@@ -386,7 +386,7 @@ h1 {
 .tekstboks3 h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
 }
 
@@ -422,7 +422,7 @@ h1 {
 .tekstboks4 h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
 }
 

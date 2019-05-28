@@ -304,7 +304,7 @@ nav.menu_baggrund ul li ul li:hover {
 
 .koncept_tekst {
     position: relative;
-    max-width: 70%;
+    max-width: 60%;
     top: 10%;
     left: 10%;
 }
@@ -312,7 +312,7 @@ nav.menu_baggrund ul li ul li:hover {
 .koncept h1 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #555;
 }
@@ -339,9 +339,9 @@ nav.menu_baggrund ul li ul li:hover {
 
 .citat1_tekst {
     position: absolute;
-    max-width: 70%;
+    max-width: 60%;
     bottom: 20%;
-    right: 5%;
+    right: 10%;
     text-align: right;
 }
 
@@ -377,7 +377,7 @@ nav.menu_baggrund ul li ul li:hover {
 .citat1 h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #555;
 }
@@ -422,7 +422,7 @@ nav.menu_baggrund ul li ul li:hover {
 
 .cirkulaeroekonomi_tekst {
     position: relative;
-    max-width: 70%;
+    max-width: 60%;
     top: 30%;
     left: 10%;
 }
@@ -430,7 +430,7 @@ nav.menu_baggrund ul li ul li:hover {
 .cirkulaeroekonomi h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -438,7 +438,7 @@ nav.menu_baggrund ul li ul li:hover {
 .cirkulaeroekonomi h3 {
     color: #fff;
     font-family: tekst;
-    font-size: 35px;
+    font-size: 2.5vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -470,14 +470,14 @@ nav.menu_baggrund ul li ul li:hover {
     position: relative;
     max-width: 50%;
     top: 15%;
-    left: 45%;
+    left: 40%;
     text-align: right;
 }
 
 .indretning h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -525,7 +525,7 @@ nav.menu_baggrund ul li ul li:hover {
 .tekstboks1 h2 {
     color: #fff;
     font-family: overskrift;
-    font-size: 50px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -699,7 +699,7 @@ footer {
         position: absolute;
         max-width: 100%;
         top: 15%;
-        left: 0%;
+        right: 0%;
         padding: 20px;
         text-align: right;
     }
@@ -738,7 +738,7 @@ footer {
         position: relative;
         z-index: -1000;
         width: 100%;
-        height: 800px;
+        height: 550px;
         margin-top: -65px;
         background-color: #008f8a;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);

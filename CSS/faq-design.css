@@ -337,7 +337,7 @@ nav.menu_baggrund ul li img {
 .faq_intro h1 {
     font-family: Overskrift;
     color: #fff;
-    font-size: 4vw;
+    font-size: 40px;
     text-align: left;
 
 }
@@ -348,7 +348,7 @@ nav.menu_baggrund ul li img {
     margin-left: auto;
     margin-right: auto;
     font-family: tekst;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     letter-spacing: 1px;
 }
 
@@ -526,7 +526,17 @@ footer {
 @media (max-width: 1010px) {
 
     .faq_intro {
+
         padding-bottom: 20%;
+    }
+
+    .faq_intro div {
+        position: relative;
+        text-align: center;
+        top: 30%;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .faq {
@@ -552,7 +562,7 @@ footer {
     .faq_intro h1 {
         font-family: Overskrift;
         color: #fff;
-        font-size: 6vw;
+        font-size: 5vw;
         text-align: left;
     }
 
@@ -576,8 +586,8 @@ footer {
         padding-bottom: 40px;
         z-index: 2;
     }
-    
-     .some {
+
+    .some {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -600,17 +610,15 @@ footer {
         justify-content: center;
         margin: 15px;
         margin-top: 80px;
-}
+    }
 
 }
 
 @media (max-width: 600px) {
-    
+
     .faq {
         position: relative;
         background-color: #008F8A;
         min-height: 100vh;
-        margin-top: -34.5%;
     }
 }
-

@@ -551,15 +551,15 @@ footer {
     }
 
     .intro_Box {
-        padding-top:  5vw;
-        padding-bottom:  5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
         margin-left: 15vw;
         margin-right: 15vw;
     }
 
     h2 {
         margin-top: 0%;
-        text-align: left;
+        text-align: center;
         font-size: 5vw;
     }
 
@@ -633,12 +633,12 @@ footer {
     .text_Box p {
         margin-top: 10px;
         font-family: tekst;
-        max-width: 85%;
+        max-width: 95%;
         letter-spacing: 1px;
         font-size: 15px;
         margin-bottom: 20px;
     }
-    
+
     .text_Box a {
         position: absolute;
         max-width: 100%;
@@ -647,6 +647,13 @@ footer {
         font-size: 30px;
         right: 5px;
         bottom: 5px;
+    }
+    
+
+    .some {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .some a {
@@ -666,7 +673,6 @@ footer {
         justify-content: center;
         margin: 15px;
         margin-top: 80px;
-
     }
 
     @media (max-width: 650px) {
@@ -764,7 +770,7 @@ footer {
         .text_Box p {
             margin-top: 10px;
             font-family: tekst;
-            max-width: 85%;
+            max-width: 95%;
             letter-spacing: 1px;
             font-size: 15px;
             margin-bottom: 20px;
