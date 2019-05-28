@@ -21,7 +21,7 @@
     <div class="topnav">
         <a href="index.html" class="active"><img src="Billeder/logo-uden-baggrund.png"></a>
         <div id="myLinks">
-            <a href="koncept.html">Koncept</a>
+            <a href="koncept.html" style="border-top: 1px solid #fff">Koncept</a>
             <a href="praktisk.html">Praktisk</a>
             <a href="faq.html">FAQ</a>
             <a href="events.html">Events</a>
@@ -62,17 +62,17 @@
 
         <!------------------------------------------Tekstafsnit----------------------------------->
 
-
-
-
-
     </section>
 
     <div class="intro_tekst">
 
-        <h1>DET SKER PÅ REUSE</h1>
+        <div class="intro_tekst_box">
 
-        <p> På denne side kan du følge med i, hvilke arrangementer, workshops og generelle begivenheder, der afholdes nede ved os. Vi opdaterer løbende kalenderen, så følg med her eller på vores Facebookside. </p>
+            <h1>DET SKER PÅ REUSE</h1>
+
+            <p> På denne side kan du følge med i, hvilke arrangementer, workshops og generelle begivenheder, der afholdes nede ved os. Vi opdaterer løbende kalenderen, så følg med her eller på vores Facebookside. </p>
+
+        </div>
 
     </div>
 
@@ -97,33 +97,60 @@
                     <div class="billede_Box">
 
                         <img src="Billeder/Plante-kasse.jpg">
+                        
+                        <div class="dato_Box">
+                        <p>18/5</p>
+                        </div>
 
                     </div>
 
                     <div class="text_Box">
                         <h2>Byg din egen Plantekasse</h2>
                         <p>Er du også ved at gøre terrassen sommerklar? Så kom forbi hos os, når vi lørdag den 18. maj 2019 afholder en workshop i, hvordan du bygger din egen plantekasse…</p>
-
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
                     </div>
 
                 </div>
 
-            </div>
-
-            <div class="events">
 
                 <div class="event_Box">
 
                     <div class="billede_Box">
 
                         <img src="Billeder/bliv-klogere.jpg">
+                        
+                        <div class="dato_Box">
+                        <p>4/6</p>
+                        </div>
 
                     </div>
 
                     <div class="text_Box">
                         <h2>Bliv klogere på genanvendelighed</h2>
                         <p>Tirsdag d. 4. juni 2019 afholder vi en workshop i samarbejde med AffaldVarme, hvor du kan komme og blive klogere på affaldshåndtering samt tips og tricks… </p>
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
 
+                </div>
+
+
+                <div class="event_Box">
+
+                    <div class="billede_Box">
+
+                        <img src="Billeder/Decoupage.jpg">
+                        
+                        <div class="dato_Box">
+                        <p>23/6</p>
+                        </div>
+
+                    </div>
+
+                    <div class="text_Box">
+                        <h2>Kunsten at lave Decoupage</h2>
+                        <p>Vil du lære hvordan man skaber decoupage? Så kom forbi REUSE den 23. juni 2019. Her lærer du alle de kreative procceser ved decoupage!
+                            Kom frisk :-)  </p>
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
                     </div>
 
                 </div>
@@ -135,7 +162,7 @@
 
         <div class="frivillig">
             <p> Er du interesseret i at afholde et arrangement eller en workshop nede ved os? Eller har du ideer til arrangementer, så hører vi meget gerne fra dig/jer.
-                Kontakt vores projektkoordinator Peter Christensen på telefonnummer +45 41 85 97 05 eller på mail petch@aarhus.dk.
+                Kontakt vores projektkoordinator Peter Christensen på telefonnummer <b> +45 41 85 97 05 </b>eller på mail <b>petch@aarhus.dk.</b>
 
                 <br>
                 <br>
@@ -160,7 +187,6 @@
 
             calendar.render();
         });
-
     </script>
 
     <!---------------------Javascript til at aktivere kalender slut------------------------>
@@ -200,7 +226,6 @@
                 <p>Affaldvarme@Aarhus.dk</p>
                 <p>Tlf: 89 40 15 00</p>
             </div>
-
         </div>
 
         <div class="copyright">

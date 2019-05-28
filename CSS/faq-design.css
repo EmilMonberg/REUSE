@@ -96,7 +96,7 @@ body {
     max-width: 100%;
 }
 
-/* Navigations styling */
+/* ------------------------Navigations styling------------------------ */
 
 .topnav {
     overflow: hidden;
@@ -119,6 +119,8 @@ body {
 
 .topnav #myLinks a {
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
 }
 
 .topnav a {
@@ -128,7 +130,6 @@ body {
     font-size: 20px;
     display: block;
     font-family: overskrift;
-    border-bottom: 1px solid #fff;
 }
 
 .topnav a.icon {
@@ -168,11 +169,14 @@ nav {
     /* Opera */
 }
 
+/* ------------------------Navigations styling slut ------------------------ */
+
+/*------------------ Navigations styling med scroll effekt ----------------- */
+
 nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
     padding: 5px 0px;
 }
-
 
 
 nav.menu_baggrund ul li a {
@@ -296,6 +300,10 @@ nav.menu_baggrund ul li img {
     margin-bottom: -100px;
 }
 
+/*------------------ Navigations styling med scroll effekt slut ----------------- */
+
+
+/*---------------------------------intro----------------------------*/
 
 .section1 {
     position: relative;
@@ -344,6 +352,8 @@ nav.menu_baggrund ul li img {
     letter-spacing: 1px;
 }
 
+/*---------------------------intro slut----------------------------*/
+
 /*----------------------------Faq-menu-------------------------------*/
 
 
@@ -371,6 +381,7 @@ nav.menu_baggrund ul li img {
     text-align: center;
     color: #fff;
     font-size: 40px;
+    letter-spacing: 2px;
     padding-bottom: 5px;
     font-family: Overskrift;
 }
@@ -393,7 +404,7 @@ nav.menu_baggrund ul li img {
 
 .collapsible.active,
 .collapsible:hover {
-    background-color: #00A878;
+    background-color: #156a5a;
     color: white;
 }
 

@@ -28,7 +28,7 @@
 }
 
 @-moz-keyframes fadein {
-    
+
     /*------------------ Firefox ------------------------ */
     from {
         opacity: 0;
@@ -73,6 +73,7 @@ body {
 header {
     z-index: 9999;
 }
+
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .8);
@@ -94,6 +95,8 @@ header {
 
 .topnav #myLinks a {
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
 }
 
 .topnav a {
@@ -103,7 +106,6 @@ header {
     font-size: 20px;
     display: block;
     font-family: overskrift;
-    border-bottom: 1px solid #fff;
 }
 
 .topnav a.icon {
@@ -143,6 +145,10 @@ nav {
     -o-animation: fadein 2s;
     /* Opera */
 }
+
+/*--------------- Navigationsbar styling slut -----------------*/
+
+/*------------- Navigations styling med scroll effekt ----------------- */
 
 nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
@@ -270,6 +276,7 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/*------------- Navigations styling med scroll effekt slut----------------- */
 
 .section1 {
     background: url(../Billeder/praktisk-reuse.png);
@@ -278,8 +285,6 @@ nav.menu_baggrund ul li ul li:hover {
     background-position: center;
     width: 100%;
     height: 75vh;
-
-
 }
 
 /*-----------------------------Praktisk -----------------------------*/
@@ -567,6 +572,8 @@ h1 {
     line-height: 40px;
 }
 
+/*-----------------------------Praktisk slut-----------------------------*/
+
 
 /*-----------------------------FOOTER--------------------------------*/
 
@@ -641,7 +648,9 @@ footer {
     letter-spacing: 5px;
 }
 
-/*-------------------------------------------MEDIA QUERY-----------------------------------*/
+/*---------------------------FOOTER slut--------------------------------*/
+
+/*---------------------------MEDIA QUERY-----------------------------------*/
 
 @media (max-width: 1010px) {
 
@@ -669,9 +678,8 @@ footer {
 
     .content {
         overflow: hidden;
-        margin-top: -75px;
+        margin-top: -80px;
     }
-
 
     .praktisk {
         width: 100%;
@@ -691,7 +699,6 @@ footer {
         width: 100%;
         top: 10%;
         left: 0;
-
     }
 
     h1 {
@@ -709,8 +716,6 @@ footer {
         line-height: 25px;
         position: relative;
     }
-
-
 
     .tekstboks2 h2 {
         position: relative;
@@ -797,7 +802,6 @@ footer {
         background-color: #008f8a;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-
     }
 
     .tekstboks4 {
@@ -838,7 +842,6 @@ footer {
         background-color: #156a5a;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
     }
 
     .tekstbokscykel {
@@ -877,7 +880,6 @@ footer {
         position: absolute;
         right: 5%;
         bottom: 15%;
-
     }
 
 

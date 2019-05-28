@@ -116,6 +116,8 @@ body {
 
 .topnav #myLinks a {
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #555
 }
 
 .topnav a img {
@@ -129,7 +131,6 @@ body {
     font-size: 20px;
     display: block;
     font-family: overskrift;
-    border-bottom: 1px solid #fff;
 }
 
 .topnav a.icon {
@@ -141,7 +142,6 @@ body {
     border-bottom: none;
 }
 
-
 .topnav div a:hover {
     background-color: #074f4b;
 }
@@ -149,6 +149,7 @@ body {
 .active {
     background-color: rgba(0, 0, 0, .0);
     color: white;
+    border-bottom: 0;
 }
 
 nav {
@@ -173,6 +174,7 @@ nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
     padding: 5px 0px;
 }
+
 /*------------- Navigations styling slut ----------------- */
 
 /*--------------Animation med knap styling-----------------*/
@@ -250,6 +252,7 @@ nav.menu_baggrund {
 
 /*------------Animation med knap styling slut-------------*/
 
+/*------------- Navigations styling med scroll effekt ----------------- */
 
 nav.menu_baggrund ul li a {
     color: white;
@@ -352,6 +355,25 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+.lille_logo {
+    width: 110px;
+    padding: 10px 30px;
+    transition: 0.8s;
+
+}
+
+.lille_logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+nav.menu_baggrund ul li img {
+    margin-bottom: -100px;
+}
+
+/*------------- Navigations styling med scroll effekt ----------------- */
+
 
 .section1 {
     background-color: white;
@@ -381,23 +403,6 @@ nav.menu_baggrund ul li ul li:hover {
     border-bottom: 1px solid #fff;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.lille_logo {
-    width: 110px;
-    padding: 10px 30px;
-    transition: 0.8s;
-
-}
-
-.lille_logo:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-
-nav.menu_baggrund ul li img {
-    margin-bottom: -100px;
 }
 
 .scroll-indicator {
@@ -615,7 +620,6 @@ h1 {
 
 /* ---------------------- INFOGRAPHIC SLUT -------------------------------*/
 
-
 /*------------------------"PRAKTISK" AFSNIT start-------------------------*/
 
 /* -------------------------Skrå kanter styling---------------------------*/
@@ -635,8 +639,8 @@ h1 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
-/* ------------------Skrå kanter styling slut------------------------------*/
 
+/* ------------------Skrå kanter styling slut------------------------------*/
 
 /*-----------------------------Tekst stylyng------------------------------*/
 
@@ -702,9 +706,9 @@ h1 {
 .praktisk img:hover {
     transform: scale(1.05);
 }
+
 /*--------------------Ikon tekstafsnit styling slut-----------------------*/
 /*------------------------"PRAKTISK" AFSNIT slut-------------------------*/
-
 
 
 /*------------------------"KALENDER AFSNIT start-------------------------*/
@@ -734,7 +738,6 @@ h1 {
     font-family: overskrift;
     font-size: 50px;
     letter-spacing: 2px;
-
 }
 
 .kalender p {
@@ -783,11 +786,12 @@ h1 {
 .kalender img:hover {
     transform: scale(1.05);
 }
+
 /*------------------Ikon tekstafsnit styling slut-----------------------*/
 /*------------------------"KALENDER AFSNIT slut-------------------------*/
 
 
-/*--------------------Snap Widget styling-------------------------------*/
+/*--------------------Instagram slut-------------------------------*/
 
 .insta {
     text-align: center;
@@ -816,9 +820,9 @@ h1 {
     padding: 15px;
 }
 
-/*--------------------Snap Widget styling slut--------------------------*/
+/*--------------------Instagram slut--------------------------*/
 
-/*--------------------"DIY AFSNIT start------------------------*/
+/*--------------------DIY AFSNIT start------------------------*/
 /*--------------------DIY main div styling---------------------*/
 
 .diy_opslagstavle {
@@ -837,6 +841,7 @@ h1 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
 }
+
 /*----------------------------Skrå kanter slut---------------------------*/
 
 /*-----------------------------Tekst stylyng------------------------------*/
@@ -852,7 +857,6 @@ h1 {
     font-family: overskrift;
     font-size: 50px;
     letter-spacing: 2px;
-
 }
 
 .diy p {
@@ -862,6 +866,7 @@ h1 {
     font-family: Tekst;
     line-height: 40px;
 }
+
 /*--------------------------Tekst stylyng slut------------------------------*/
 
 /*---------------------------Knap styling-----------------------------------*/
@@ -885,6 +890,7 @@ h1 {
     transform: scale(1.05);
 
 }
+
 /*---------------------Knap styling slut -------------------------------*/
 
 /*-----------------------Ikon tekstafsnit styling-----------------------*/
@@ -942,6 +948,7 @@ h1 {
     font-family: Tekst;
     line-height: 40px;
 }
+
 /*--------------------------Tekst stylyng slut------------------------------*/
 /*---------------------------Knap styling-----------------------------------*/
 
@@ -964,6 +971,7 @@ h1 {
     cursor: pointer;
     transform: scale(1.05);
 }
+
 /*---------------------Knap styling slut -------------------------------*/
 
 /*-----------------------Ikon tekstafsnit styling-----------------------*/
@@ -979,6 +987,7 @@ h1 {
 .opslagstavle img:hover {
     transform: scale(1.05);
 }
+
 /*-------------------Ikon tekstafsnit styling slut-----------------------*/
 /*--------------------"OPSLAGSTAVLE AFSNIT slut--------------------------*/
 
@@ -1054,6 +1063,7 @@ footer {
     padding: 5px;
     letter-spacing: 5px;
 }
+
 /*-------------------------FOOTER slut--------------------------------*/
 
 /*-------------------------------------------MEDIA QUERY-----------------------------------*/
@@ -1124,8 +1134,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 40vw;
         padding: 5px;
         font-family: tekst;
@@ -1142,8 +1152,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 25vw;
         padding: 5px;
         font-family: tekst;
@@ -1158,8 +1168,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 35vw;
         padding: 5px;
         font-family: tekst;
@@ -1174,8 +1184,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 40vw;
         padding: 5px;
         font-family: tekst;
@@ -1191,7 +1201,7 @@ footer {
         background-color: rgb(0, 143, 138);
         color: white;
         font-size: 2vw;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.5px;
         width: 20vw;
         padding: 5px;
         font-family: tekst;
@@ -1206,8 +1216,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 40vw;
         padding: 5px;
         font-family: tekst;
@@ -1222,8 +1232,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 40vw;
         padding: 5px;
         font-family: tekst;
@@ -1238,8 +1248,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 40vw;
         padding: 5px;
         font-family: tekst;
@@ -1254,8 +1264,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 60vw;
         padding: 5px;
         font-family: tekst;
@@ -1270,8 +1280,8 @@ footer {
         text-align: center;
         background-color: rgb(0, 143, 138);
         color: white;
-        font-size: 2vw;
-        letter-spacing: 1.5px;
+        font-size: 2.2vw;
+        letter-spacing: 0.5px;
         width: 15vw;
         padding: 5px;
         font-family: tekst;

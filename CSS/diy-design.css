@@ -66,6 +66,9 @@ body {
     height: 100%;
     max-width: 100%;
 }
+
+/*------------- Navigations styling slut ----------------- */
+
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, .8);
@@ -87,6 +90,8 @@ body {
 
 .topnav #myLinks a {
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
 }
 
 .topnav a {
@@ -96,7 +101,6 @@ body {
     font-size: 20px;
     display: block;
     font-family: overskrift;
-    border-bottom: 1px solid #fff;
 }
 
 .topnav a.icon {
@@ -107,7 +111,6 @@ body {
     top: 0;
     border-bottom: none;
 }
-
 
 .topnav div a:hover {
     background-color: #074f4b;
@@ -136,6 +139,10 @@ nav {
     -o-animation: fadein 2s;
     /* Opera */
 }
+
+/*------------- Navigations styling slut ----------------- */
+
+/*------------- Navigations styling med scroll effekt ----------------- */
 
 nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
@@ -263,18 +270,20 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/*------------- Navigations styling med scroll effekt slut----------------- */
+
 /*---------------------Indhold------------------------*/
 
 body {
     overflow-x: hidden;
 }
-
 .section1 {
-    background: url(../Billeder/DIY-banner.png);
+    background: url(../Billeder/taenke-boks.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
     width:105%;
-    height: 120vh;
+    height: 100vh;
 }
 
 h1 {
@@ -397,9 +406,6 @@ h2 {
 .sek12:hover {
     transform: scale(1.02);
 }
-
-
-
 
 
 /* ----------- Sektion 1 / Palle-sofa ----------*/
@@ -655,8 +661,7 @@ h2 {
     font-family: Overskrift;
 }
 
-
-
+/* -------- Tekstbokse på billeder slut ----*/
 
 
 /*-----------------------------FOOTER--------------------------------*/
@@ -685,7 +690,6 @@ footer {
     justify-content: center;
     margin: 50px;
 }
-
 
 .some a {
     position: relative;
@@ -751,7 +755,7 @@ footer {
 /* ------------------- MEDIA QUARIES -----------------*/
 
 /* ------------- Mobil version ------------- */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
 
     html {
         overflow-x: hidden;

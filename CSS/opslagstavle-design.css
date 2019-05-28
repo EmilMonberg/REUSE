@@ -91,6 +91,8 @@ body {
 
 .topnav #myLinks a {
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
 }
 
 .topnav a {
@@ -100,7 +102,6 @@ body {
     font-size: 20px;
     display: block;
     font-family: overskrift;
-    border-bottom: 1px solid #fff;
 }
 
 .topnav a.icon {
@@ -140,6 +141,8 @@ nav {
     -o-animation: fadein 2s;
     /* Opera */
 }
+
+/*------------- Navigations styling med scroll effekt ----------------- */
 
 nav.menu_baggrund {
     background: rgba(0, 0, 0, .8);
@@ -243,7 +246,7 @@ nav ul li ul li a {
     display: block;
 }
 
-nav ul li:hover>ul,
+nav ul li:hover > ul,
 nav ul li ul:hover {
     position: relative;
     display: block;
@@ -267,6 +270,8 @@ nav.menu_baggrund ul li ul li:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 
+/*------------- Navigations styling med scroll effekt slut ----------------- */
+
 .section1 {
     background-color: #156A5A;
     width: 100%;
@@ -275,11 +280,20 @@ nav.menu_baggrund ul li ul li:hover {
 
 /*--------------------------Indhold----------------------*/
 
+.container {
+    background-color: #008f8a;
+    padding-bottom: 50px;
+}
+
+.container_mobil {
+    display: none;
+}
+
 .intro {
     padding-top: 2vw;
     width: 100%;
     margin-top: -10vw;
-    height: 45vw;
+    height: 35vw;
     background-color: #156A5A;
     font-family: Overskrift;
     color: white;
@@ -298,27 +312,10 @@ h1 {
     color: white;
     font-family: Tekst;
     font-size: 1.2vw;
-    margin-top: 5%;
-    margin-left: 17.5%;
-    margin-right: 15.5%;
-}
-
-.sec2 {
-    background-color: #008f8a;
-    z-index: 200;
-    margin-top: -160vw;
-    width: 100%;
-    height: 171vw;
-}
-
-.sec4 {
-    background-color: #00a87b;
-    z-index: 260;
-    margin-top: -45vw;
-    width: 100%;
-    height: 40vw;
-    -webkit-clip-path: polygon(0 80%, 0% 100%, 100% 100%);
-    clip-path: polygon(0 80%, 0% 100%, 100% 100%);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .board {
@@ -327,7 +324,6 @@ h1 {
     margin-top: -50vw;
     display: block;
     margin: auto;
-    margin-bottom: 3vw;
     z-index: 450;
     position: relative;
 }
@@ -437,7 +433,7 @@ h1 {
     box-shadow: 0 10px 10px rgba(0.2, 0.4, 0.4, 0.4);
 }
 
-
+/*--------------------------Indhold slut----------------------*/
 
 /*-----------------------------FOOTER--------------------------------*/
 
@@ -512,6 +508,8 @@ footer {
     letter-spacing: 5px;
 }
 
+/*-----------------------------FOOTER slut--------------------------------*/
+
 /*-------------------------------------------MEDIA QUERY-----------------------------------*/
 
 @media (max-width: 1010px) {
@@ -524,4 +522,263 @@ footer {
         display: block;
         z-index: 999999;
     }
-}
+
+    .container {
+        display: none;
+    }
+
+    .container_mobil {
+        display: unset;
+    }
+
+    .section1 {
+        background-color: #156A5A;
+        width: 100%;
+        height: 80px;
+    }
+
+    .intro {
+        padding-top: 40px;
+        width: 100%;
+        margin-top: 0;
+        height: 375px;
+        background-color: #156A5A;
+        font-family: Overskrift;
+        color: white;
+        z-index: 300;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    .intro_Box {
+        padding-top:  5vw;
+        padding-bottom:  5vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    h1 {
+        margin-top: 0%;
+        text-align: left;
+        font-size: 5vw;
+    }
+
+    .it {
+        color: white;
+        font-family: Tekst;
+        font-size: 15px;
+        width: 100%;
+        padding: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+
+    .baggrund {
+        background-color: #008f8a;
+        width: 100%;
+        margin-top: -120px;
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 100px;
+        z-index: -1;
+    }
+
+    .events {
+        background-color: #008f8a;
+        display: unset;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .event_Box {
+        margin-bottom: 20px;
+        position: relative;
+        max-width: 100%;
+        border-radius: 0px 50px 0px 50px;
+        background-color: #074f4b;
+        border: 1px solid #fff;
+        margin: 5vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        z-index: 600;
+    }
+
+    .billede_Box {
+        width: 100%;
+        height: 50vw;
+        overflow: hidden;
+    }
+
+    .event_Box img {
+        max-width: 100%;
+        border-radius: 0px 49px;
+        0px 0px;
+    }
+
+    .text_Box {
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+        padding-left: 20px;
+        color: #fff;
+        margin-top: -20px;
+    }
+
+    .text_Box h2 {
+        font-family: Overskrift;
+        max-width: 100%;
+    }
+
+    .text_Box p {
+        margin-top: 10px;
+        font-family: tekst;
+        max-width: 85%;
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .text_Box a {
+        position: absolute;
+        max-width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .some a {
+        position: relative;
+        top: 0;
+        text-decoration: none;
+        color: #262626;
+        font-size: 35px;
+    }
+
+    .some div {
+        display: flex;
+        background-color: #074f4b;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        margin: 15px;
+        margin-top: 80px;
+
+    }
+
+    @media (max-width: 650px) {
+
+        nav {
+            display: none;
+        }
+
+        .topnav {
+            display: block;
+            z-index: 999;
+        }
+
+        .kalender_box {
+            display: none;
+        }
+
+        .section1 {
+            background-color: #074f4b;
+            position: relative;
+            width: 100%;
+            height: 80px;
+        }
+
+        .intro_tekst {
+            height: 250px;
+            background-color: #074f4b;
+            position: relative;
+            z-index: 10;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            padding: 5vw;
+        }
+
+        .intro_Box {
+            padding: 5vw;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+        .baggrund {
+            background-color: #008f8a;
+            width: 100%;
+            margin-top: -120px;
+            position: relative;
+            padding-top: 120px;
+            padding-bottom: 100px
+        }
+
+        .events {
+            background-color: #008f8a;
+            display: unset;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .event_Box {
+            margin-bottom: 20px;
+            position: relative;
+            max-width: 100%;
+            border-radius: 0px 50px 0px 50px;
+            background-color: #074f4b;
+            border: 1px solid #fff;
+            margin: 5vw;
+            z-index: 600;
+        }
+
+        .billede_Box {
+            width: 100%;
+            height: 50vw;
+            overflow: hidden;
+        }
+
+        .event_Box img {
+            max-width: 100%;
+            border-radius: 0px 50px;
+            0px 0px;
+        }
+
+        .text_Box {
+            position: relative;
+            max-width: 100%;
+            padding: 20px;
+            padding-left: 20px;
+            color: #fff;
+            margin-top: -20px;
+        }
+
+        .text_Box h2 {
+            font-family: Overskrift;
+            max-width: 100%;
+        }
+
+        .text_Box p {
+            margin-top: 10px;
+            font-family: tekst;
+            max-width: 85%;
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .text_Box a {
+            position: absolute;
+            max-width: 100%;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            right: 5px;
+            bottom: 5px;
+        }
+
+
+    }

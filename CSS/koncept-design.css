@@ -92,6 +92,8 @@ body {
 
 .topnav #myLinks a {
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
 }
 
 .topnav a {
@@ -101,7 +103,6 @@ body {
     font-size: 20px;
     display: block;
     font-family: overskrift;
-    border-bottom: 1px solid #fff;
 }
 
 .topnav a.icon {
@@ -275,7 +276,6 @@ nav.menu_baggrund ul li ul li:hover {
     background: url(../Billeder/koncept-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
     width: 100%;
     height: 75vh;
 
@@ -299,6 +299,7 @@ nav.menu_baggrund ul li ul li:hover {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
 }
+
 /*----------------------Tekst styling -------------------------*/
 
 .koncept_tekst {
@@ -323,6 +324,7 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: Tekst;
     line-height: 40px;
 }
+
 /*----------------------Tekst styling slut -------------------------*/
 
 
@@ -367,6 +369,7 @@ nav.menu_baggrund ul li ul li:hover {
     text-shadow: 1px 1px 1px #000000;
     transform: rotate(180deg);
 }
+
 /*---------------Citationstegn slut -----------------------------*/
 
 /*----------------------Tekst styling -------------------------*/
@@ -386,7 +389,9 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: Tekst;
     line-height: 40px;
 }
+
 /*----------------------Tekst styling slut -------------------------*/
+
 /*-------------Sektion med containerbillede styling-------------*/
 
 .containerbillede {
@@ -400,9 +405,10 @@ nav.menu_baggrund ul li ul li:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
     overflow: hidden;
-
 }
+
 /*------------------Sektion med cirkulær økonomi---------------*/
+
 .cirkulaeroekonomi {
     position: relative;
     z-index: -1000;
@@ -444,6 +450,7 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: Tekst;
     line-height: 40px;
 }
+
 /*----------------------Tekst styling slut -------------------------*/
 
 /*------------------Sektion med indretning--------------------------*/
@@ -482,6 +489,7 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: tekst;
     line-height: 40px;
 }
+
 /*----------------------Tekst styling slut -------------------------*/
 
 .indretningsbillede {
@@ -494,8 +502,8 @@ nav.menu_baggrund ul li ul li:hover {
     background-repeat: no-repeat;
     overflow: hidden;
     margin-top: -290px;
-
 }
+
 /*------------Mere end en genbrugsstation sektion--------------------*/
 .tekstboks1 {
     background-color: #008f8a;
@@ -529,9 +537,10 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: tekst;
     line-height: 40px;
 }
-/*----------------------Tekst styling slut -------------------------*/
-/*----------------------INDHOLD SLUT---------------------------------*/
 
+/*----------------------Tekst styling slut -------------------------*/
+
+/*----------------------INDHOLD SLUT---------------------------------*/
 
 /*-----------------------------FOOTER--------------------------------*/
 
@@ -603,11 +612,11 @@ footer {
     padding: 5px;
     letter-spacing: 5px;
 
-/*------------------------FOOTER slut-------------------------------*/
+    /*------------------------FOOTER slut-------------------------------*/
 
 }
 
-/*-------------------------------------------MEDIA QUERY-----------------------------------*/
+/*----------------------------MEDIA QUERY-----------------------------------*/
 
 @media (max-width: 1010px) {
 
@@ -619,7 +628,6 @@ footer {
         display: block;
         z-index: 999999;
     }
-
 
     .section1 {
         background: url(../Billeder/koncept-banner.png);
@@ -639,7 +647,6 @@ footer {
         margin-top: -100px;
     }
 
-
     .koncept {
         width: 100%;
         height: 475px;
@@ -650,7 +657,6 @@ footer {
         background-color: #00a87b;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
     }
 
     .koncept_tekst {
@@ -689,7 +695,7 @@ footer {
     }
 
     .citat1_tekst {
-        
+
         position: absolute;
         max-width: 100%;
         top: 15%;
@@ -733,7 +739,7 @@ footer {
         position: relative;
         z-index: -1000;
         width: 100%;
-        height: 675px;
+        height: 800px;
         margin-top: -65px;
         background-color: #008f8a;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -856,7 +862,7 @@ footer {
         font-family: tekst;
         line-height: 25px;
     }
-    
+
     .some {
         display: flex;
         flex-wrap: nowrap;
@@ -880,11 +886,6 @@ footer {
         justify-content: center;
         margin: 15px;
         margin-top: 80px;
-
     }
-
-
-
-
 
 }
