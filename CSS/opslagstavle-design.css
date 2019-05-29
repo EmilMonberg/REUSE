@@ -612,7 +612,7 @@ footer {
 
     .event_Box img {
         max-width: 100%;
-        border-radius: 0px 49px;
+        border-radius: 0px 49px
         0px 0px;
     }
 
@@ -750,7 +750,7 @@ footer {
 
         .event_Box img {
             max-width: 100%;
-            border-radius: 0px 50px;
+            border-radius: 0px 50px
             0px 0px;
         }
 
@@ -789,3 +789,4 @@ footer {
 
 
     }
+}
