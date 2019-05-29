@@ -731,13 +731,14 @@ footer {
         }
 
         .event_Box {
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             position: relative;
             max-width: 100%;
             border-radius: 0px 50px 0px 50px;
             background-color: #074f4b;
             border: 1px solid #fff;
             margin: 5vw;
+            margin-bottom: 35px;
             z-index: 600;
         }
 

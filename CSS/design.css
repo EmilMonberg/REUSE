@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /*------------------------ Fonts ---------------------------*/
 
 @font-face {
@@ -417,6 +420,7 @@ nav.menu_baggrund ul li img {
 }
 
 
+
 /* ---------------------- INFOGRAPHIC -------------------------------*/
 .info_ov {
     position: absolute;
@@ -435,6 +439,7 @@ h1 {
 }
 
 .infographic {
+    margin-top: 50px;
     position: relative;
     max-width: 100%;
     justify-content: center;
@@ -695,7 +700,7 @@ h1 {
 
 .praktisk img {
     position: absolute;
-    width: 300px;
+    width: 250px;
     top: 15%;
     right: 10%;
     transition: transform .2s;
@@ -775,8 +780,8 @@ h1 {
 
 .kalender img {
     position: absolute;
-    width: 300px;
-    bottom: 15%;
+    width: 250px;
+    bottom: 25%;
     left: 10%;
     transition: transform .2s;
 }
@@ -905,8 +910,8 @@ h1 {
 
 .diy img {
     position: absolute;
-    width: 300px;
-    top: 10%;
+    width: 250px;
+    top: 15%;
     right: 10%;
     transition: transform .2s;
     transform: rotate(10deg);
@@ -914,6 +919,7 @@ h1 {
 
 .diy img:hover {
     transform: scale(1.05);
+    transform: rotate(15deg);
 }
 
 /*-------------------Ikon tekstafsnit styling slut-----------------------*/
@@ -986,14 +992,14 @@ h1 {
 
 .opslagstavle img {
     position: absolute;
-    width: 300px;
-    bottom: 35%;
+    width: 250px;
+    bottom: 25%;
     left: 10%;
     transition: transform .2s;
 }
 
 .opslagstavle img:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 /*-------------------Ikon tekstafsnit styling slut-----------------------*/

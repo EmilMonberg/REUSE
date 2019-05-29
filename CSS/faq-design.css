@@ -527,7 +527,7 @@ footer {
 
     .faq_intro {
 
-        padding-bottom: 20%;
+        padding-bottom: 10%;
     }
 
     .faq_intro div {
@@ -620,5 +620,6 @@ footer {
         position: relative;
         background-color: #008F8A;
         min-height: 100vh;
+        margin-top: -150px;
     }
 }

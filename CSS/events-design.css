@@ -300,14 +300,14 @@ nav.menu_baggrund ul li ul li:hover {
     position: relative;
     color: #fff;
     font-family: Overskrift;
-    font-size: 50px;
-    letter-spacing: 1px;
+    font-size: 3vw;
+    letter-spacing: 2px;
 }
 
 .intro_tekst p {
     position: relative;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 5px;
     color: #fff;
     margin-right: auto;
@@ -365,7 +365,7 @@ nav.menu_baggrund ul li ul li:hover {
     position: relative;
     top: 30%;
     max-width: 63%;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: auto;
     margin-left: auto;
     color: #fff;
@@ -731,6 +731,7 @@ footer {
         background-color: #074f4b;
         border: 1px solid #fff;
         margin: 5vw;
+        margin-bottom: 35px;
         z-index: 600;
     }
 

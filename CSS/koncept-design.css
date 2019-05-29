@@ -276,9 +276,9 @@ nav.menu_baggrund ul li ul li:hover {
     background: url(../Billeder/koncept-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 30%;
     width: 100%;
     height: 75vh;
-
 }
 
 /*-----------------------INDHOLD-------------------------------*/
@@ -294,7 +294,7 @@ nav.menu_baggrund ul li ul li:hover {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-color: #00a87b;
+    background-color: #156a5a;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
@@ -314,7 +314,6 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: overskrift;
     font-size: 3vw;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #555;
 }
 
 .koncept p {
@@ -334,43 +333,17 @@ nav.menu_baggrund ul li ul li:hover {
     width: 100%;
     height: 700px;
     margin-top: -250px;
-    background-color: #156a5a;
+    background-color: #00a87b;
 }
 
 .citat1_tekst {
     position: absolute;
     max-width: 60%;
-    bottom: 20%;
+    bottom: 10%;
     right: 10%;
     text-align: right;
 }
 
-/*-----------------------Citationstegn-----------------------------*/
-
-.citationstegn1 {
-    position: relative;
-    top: 47%;
-    left: 49%;
-    color: #f99a38;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.citationstegn2 {
-    position: absolute;
-    bottom: 18%;
-    right: 2%;
-    color: #f99a38;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000000;
-    transform: rotate(180deg);
-}
-
-/*---------------Citationstegn slut -----------------------------*/
 
 /*----------------------Tekst styling -------------------------*/
 
@@ -379,15 +352,30 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: overskrift;
     font-size: 3vw;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #555;
 }
 
 .citat1 p {
+    position: relative;
     color: #fff;
     letter-spacing: 1px;
     font-size: 20px;
     font-family: Tekst;
     line-height: 40px;
+}
+
+.span1 {
+    color: #f99a38;
+    font-size: 100px;
+    font-family: overkrift;
+}
+
+.span2 {
+    position: absolute;
+    padding-bottom: 20px;
+    color: #f99a38;
+    font-size: 100px;
+    font-family: overkrift;
+    transform: rotate(180deg)
 }
 
 /*----------------------Tekst styling slut -------------------------*/
@@ -432,7 +420,6 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: overskrift;
     font-size: 3vw;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000000;
 }
 
 .cirkulaeroekonomi h3 {
@@ -440,7 +427,6 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: tekst;
     font-size: 2.5vw;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000000;
 }
 
 .cirkulaeroekonomi p {
@@ -479,7 +465,6 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: overskrift;
     font-size: 3vw;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000000;
 }
 
 .indretning p {
@@ -527,7 +512,6 @@ nav.menu_baggrund ul li ul li:hover {
     font-family: overskrift;
     font-size: 3vw;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px #000000;
 }
 
 .tekstboks1 p {
@@ -672,7 +656,6 @@ footer {
         font-family: overskrift;
         font-size: 7vw;
         letter-spacing: 2px;
-        text-shadow: 1px 1px 1px #555;
     }
 
     .koncept p {
@@ -709,7 +692,6 @@ footer {
         font-family: overskrift;
         font-size: 7vw;
         letter-spacing: 2px;
-        text-shadow: 1px 1px 1px #555;
     }
 
     .citat1 p {
@@ -718,6 +700,21 @@ footer {
         font-size: 15px;
         font-family: Tekst;
         line-height: 25px;
+    }
+
+    .span1 {
+        color: unset;
+        font-size: unset;
+        font-family: overkrift;
+    }
+
+    .span2 {
+        position: unset;
+        padding-top: unset;
+        color: unset;
+        font-size: unset;
+        font-family: overkrift;
+        transform: rotate(180deg)
     }
 
     .containerbillede {
@@ -758,7 +755,6 @@ footer {
         font-family: overskrift;
         font-size: 7vw;
         letter-spacing: 1.5px;
-        text-shadow: 1px 1px 1px #000000;
     }
 
     .cirkulaeroekonomih3 {
@@ -766,7 +762,6 @@ footer {
         font-family: tekst;
         font-size: 5vw;
         letter-spacing: 2px;
-        text-shadow: 1px 1px 1px #000000;
     }
 
     .cirkulaeroekonomi p {
@@ -803,7 +798,6 @@ footer {
         font-family: overskrift;
         font-size: 7vw;
         letter-spacing: 1.5px;
-        text-shadow: 1px 1px 1px #000000;
     }
 
     .indretning p {
@@ -851,7 +845,6 @@ footer {
         font-family: overskrift;
         font-size: 7vw;
         letter-spacing: 1.5px;
-        text-shadow: 1px 1px 1px #000000;
     }
 
     .tekstboks1 p {

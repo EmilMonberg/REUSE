@@ -295,7 +295,7 @@ nav.menu_baggrund ul li ul li:hover {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-color: #00a87b;
+    background-color: #156a5a;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
@@ -333,7 +333,7 @@ h1 {
     width: 100%;
     height: 650px;
     margin-top: -200px;
-    background-color: #156a5a;
+    background-color: #00a87b;
 }
 
 .tekstboks2 {
