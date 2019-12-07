@@ -1,4 +1,3 @@
 # REUSE
-2. Semestereksamen
+Eksamensprojekt 2. Semester
 
-Eksamensprojekt fra 2. semester
